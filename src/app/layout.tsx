@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import SbukHeader from "@/components/shared/ui/layout/header";
+import SbukFooter from "@/components/shared/ui/layout/footer";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -19,15 +21,20 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
   children,
+  data
 }: Readonly<{
   children: React.ReactNode;
+  data: any;
 }>) {
+  console.log("DATA", data);
   return (
     <html lang="en">
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
+        <SbukHeader />
         {children}
+        <SbukFooter />
       </body>
     </html>
   );
