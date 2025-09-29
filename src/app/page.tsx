@@ -1,7 +1,7 @@
 export default function Home() {
   return (
-    <div className="font-sans grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20">
-      <div>Home page</div>
+    <div>
+      <img src="/images/container-cargo-freight-ship-port 1.png" alt="logo" className="h-dvh w-dvw object-fill" />
     </div>
   );
 }

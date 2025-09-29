@@ -1,0 +1,10 @@
+{
+  "title": "SBUK - Site 1",
+  "description": "Landing page of SBUK",
+  "header": {
+    "site": {
+      "siteTitle": "SONALI BANGLADESH (UK) LIMITED",
+      "siteLogo": "/images/logo.png"
+    }
+  }
+}
