@@ -34,10 +34,12 @@ export default function ExpandableCard({
       onClick={() => setActive(isActive ? null : id)}
     >
       {/* Background image */}
-      <img src={image} alt={title} className="object-fill" />
+      <img src={image} alt={title} className="w-full h-full object-cover block" />
 
       {/* Dark overlay */}
-      <div className="absolute inset-0 bg-black/30" />
+      {isActive &&
+        <div className="absolute inset-0 bg-transparent/80 backdrop-blur-xs" />
+      }
 
       {/* Top-right button */}
       <button
@@ -51,7 +53,10 @@ export default function ExpandableCard({
       </button>
 
       {/* Bottom-center title */}
-      <h2 className="absolute bottom-8 left-1/2 -translate-x-1/2 text-white text-[22px] font-[700] uppercase drop-shadow-lg">
+      <h2
+        className={`absolute bottom-8 left-1/2 -translate-x-1/2 w-[90%] text-white text-[22px] font-[700] uppercase text-center drop-shadow-lg ${isActive ? "hidden" : "inline"
+          }`}
+      >
         {title}
       </h2>
 
@@ -64,9 +69,11 @@ export default function ExpandableCard({
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: 30 }}
             transition={{ duration: 0.3 }}
-            className="absolute inset-0 flex items-center justify-center p-6 text-white bg-black/50 backdrop-blur-[8]"
+            className="absolute inset-0 flex text-white bg-black/50 backdrop-blur-[8]"
           >
-            <p>{details}</p>
+            <div className="mt-[72px] ml-[52px] font-[700] text-[34px]">
+              {title}
+            </div>
           </motion.div>
         )}
       </AnimatePresence>

@@ -3,10 +3,10 @@ import React, { useState } from 'react'
 import ExpandableCard from './ExpandableCard';
 
 const cards = [
-    { id: 1, title: "Card One", image: "/images/keyService1.jpg", details: "This is card one’s details." },
-    { id: 2, title: "Card Two", image: "/images/keyService2.jpg", details: "This is card two’s details." },
-    { id: 3, title: "Card Three", image: "/images/keyService3.jpg", details: "This is card three’s details." },
-    { id: 4, title: "Card Four", image: "/images/keyService4.jpg", details: "This is card four’s details." },
+    { id: 1, title: "Trade & Project Financing", image: "/images/keyService1.jpg", details: "This is card one’s details." },
+    { id: 2, title: "Export Development", image: "/images/keyService2.jpg", details: "This is card two’s details." },
+    { id: 3, title: "Guarantees", image: "/images/keyService3.jpg", details: "This is card three’s details." },
+    { id: 4, title: "Trade Information & Advisory", image: "/images/keyService4.jpg", details: "This is card four’s details." },
 ]
 
 const KeyServices = () => {
