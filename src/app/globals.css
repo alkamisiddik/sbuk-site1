@@ -114,11 +114,33 @@
 }
 
 @layer utilities {
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
   .bg-primary-50 {
     background-color: rgb(233, 236, 245)
   }
+
   .bg-primary-500 {
     background-color: rgb(33, 64, 154)
+  }
+
+  .text-highlight-500 {
+    color: rgb(227, 169, 31);
+  }
+
+  .bg-highlight-500 {
+    background-color: rgb(227, 169, 31)
+  }
+
+  .border-highlight-500 {
+    border-color: rgb(227, 169, 31)
   }
 }
 
@@ -130,5 +152,6 @@
 
   body {
     @apply bg-background text-foreground;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   }
 }

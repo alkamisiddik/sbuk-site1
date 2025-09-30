@@ -1,7 +1,17 @@
+'use client';
+
+import KeyServices from "@/components/keyServices/KeyService";
+import Carousel from "@/components/home/Carousel";
+import MiddleComponent from "@/components/home/MiddleComponent";
+
 export default function Home() {
+
+
   return (
-    <div>
-      <img src="/images/container-cargo-freight-ship-port 1.png" alt="logo" className="h-dvh w-dvw object-fill" />
-    </div>
+    <>
+      <Carousel />
+      <MiddleComponent />
+      <KeyServices />
+    </>
   );
 }
