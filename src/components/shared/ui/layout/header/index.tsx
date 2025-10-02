@@ -12,13 +12,13 @@ import {
 
 export function SbukHeader() {
     return (
-        <header className="w-full bg-primary text-white sticky top-0 z-10">
-            <div className="mx-auto flex h-[75px] items-center justify-between px-4 lg:px-8 max-w-9/10">
+        <header className="w-full bg-primary-500 h-[90px] text-white sticky top-0 z-10">
+            <div className="mx-auto h-full flex items-center justify-between px-4 lg:px-8 max-w-9/10">
                 {/* Left side */}
                 <Link href="/" className="flex items-center gap-3">
                     <img src="/images/logo.png" alt="logo" className="h-[42px] w-auto pb-[6px]" />
                     <div className="hidden sm:block border-l border-gray-400 h-3 opacity-60 mt-4"></div>
-                    <span className="hidden sm:block text-[12px] font-medium leading-none mt-[16px]">
+                    <span className="hidden sm:block text-xs font-medium leading-none mt-4">
                         SONALI BANGLADESH (UK) LIMITED
                     </span>
                 </Link>

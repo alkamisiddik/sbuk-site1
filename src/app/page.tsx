@@ -3,6 +3,9 @@
 import KeyServices from "@/components/keyServices/KeyService";
 import Carousel from "@/components/home/Carousel";
 import MiddleComponent from "@/components/home/MiddleComponent";
+import AboutUs from "@/components/about/AboutUs";
+import ServiceList from "@/components/services/ServiceList";
+import Finance from "@/components/finance/Finance";
 
 export default function Home() {
 
@@ -12,6 +15,9 @@ export default function Home() {
       <Carousel />
       <MiddleComponent />
       <KeyServices />
+      <AboutUs />
+      <ServiceList />
+      <Finance />
     </>
   );
 }

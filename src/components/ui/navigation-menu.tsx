@@ -102,7 +102,7 @@ function NavigationMenuContent({
           "data-[motion=to-start]:slide-out-to-left-52",
 
         // Styles
-       "bg-transparent/30 backdrop-blur-md border border-white/30",
+       "bg-primary/30 backdrop-blur-md border border-white/30",
         "text-white p-10 mt-2 shadow-xl",
 
         className
