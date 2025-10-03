@@ -171,7 +171,8 @@
   --color-primary-600: #1e3a8c;
   --color-primary-700: #172d6d;
   --color-primary-800: #122355;
- 
+  --color-primary-900: #0E1B41;
+
   --color-secondary: #483212;
   --color-secondary-50: #f7f2ea;
   --color-secondary-100: #e5d5bd;
@@ -182,7 +183,7 @@
   --color-secondary-600: #9c6d27;
   --color-secondary-700: #79551f;
   --color-secondary-800: #5e4218;
- 
+
   --color-highlight: #5f470d;
   --color-highlight-50: #fcf6e9;
   --color-highlight-100: #f6e4ba;
@@ -193,7 +194,7 @@
   --color-highlight-600: #cf9a1c;
   --color-highlight-700: #a17816;
   --color-highlight-800: #7d5d11;
- 
+
   --color-neutral: #2d3036;
   --color-neutral-50: #f0f1f2;
   --color-neutral-100: #d1d3d8;
@@ -204,7 +205,7 @@
   --color-neutral-600: #616874;
   --color-neutral-700: #4c515b;
   --color-neutral-800: #3b3f46;
- 
+
   --color-success: #074e36;
   --color-success-50: #e7f8f2;
   --color-success-100: #b5e9d8;
@@ -215,7 +216,7 @@
   --color-success-600: #0fa875;
   --color-success-700: #0b835c;
   --color-success-800: #096647;
- 
+
   --color-warning: #674205;
   --color-warning-50: #fef5e7;
   --color-warning-100: #fce1b3;
@@ -226,7 +227,7 @@
   --color-warning-600: #df900a;
   --color-warning-700: #ae7008;
   --color-warning-800: #875706;
- 
+
   --color-danger: #641d1d;
   --color-danger-50: #fdecec;
   --color-danger-100: #fac5c5;
@@ -237,13 +238,14 @@
   --color-danger-600: #d93e3e;
   --color-danger-700: #aa3030;
   --color-danger-800: #832525;
- 
+
   /* Font Family */
   --font-family-primary: "Roboto", sans-serif;
 }
- 
+
 /* Custom Typography Utilities */
 @layer utilities {
+
   /* H1 Variants */
   .text-h1-black {
     font-size: 34px;
@@ -251,37 +253,42 @@
     line-height: 40px;
     font-style: normal;
   }
+
   .text-h1-bold {
     font-size: 34px;
     font-weight: 700;
     line-height: 40px;
     font-style: normal;
   }
+
   .text-h1-medium {
     font-size: 34px;
     font-weight: 600;
     line-height: 40px;
     font-style: normal;
   }
+
   .text-h1-regular {
     font-size: 34px;
     font-weight: 400;
     line-height: 40px;
     font-style: normal;
   }
+
   .text-h1-light {
     font-size: 34px;
     font-weight: 400;
     line-height: 46px;
     font-style: normal;
   }
+
   .text-h1-thin {
     font-size: 34px;
     font-weight: 300;
     line-height: 40px;
     font-style: normal;
   }
- 
+
   /* H2 Variants */
   .text-h2-black {
     font-size: 29px;
@@ -289,37 +296,42 @@
     line-height: 35px;
     font-style: normal;
   }
+
   .text-h2-bold {
     font-size: 29px;
     font-weight: 700;
     line-height: 35px;
     font-style: normal;
   }
+
   .text-h2-medium {
     font-size: 29px;
     font-weight: 600;
     line-height: 35px;
     font-style: normal;
   }
+
   .text-h2-regular {
     font-size: 29px;
     font-weight: 400;
     line-height: 35px;
     font-style: normal;
   }
+
   .text-h2-light {
     font-size: 29px;
     font-weight: 400;
     line-height: 35px;
     font-style: normal;
   }
+
   .text-h2-thin {
     font-size: 29px;
     font-weight: 300;
     line-height: 35px;
     font-style: normal;
   }
- 
+
   /* H3 Variants */
   .text-h3-black {
     font-size: 25px;
@@ -327,37 +339,42 @@
     line-height: 30px;
     font-style: normal;
   }
+
   .text-h3-bold {
     font-size: 25px;
     font-weight: 400;
     line-height: 30px;
     font-style: normal;
   }
+
   .text-h3-medium {
     font-size: 25px;
     font-weight: 400;
     line-height: 30px;
     font-style: normal;
   }
+
   .text-h3-regular {
     font-size: 25px;
     font-weight: 400;
     line-height: 30px;
     font-style: normal;
   }
+
   .text-h3-light {
     font-size: 25px;
     font-weight: 400;
     line-height: 30px;
     font-style: normal;
   }
+
   .text-h3-thin {
     font-size: 25px;
     font-weight: 300;
     line-height: 30px;
     font-style: normal;
   }
- 
+
   /* H4 Variants */
   .text-h4-black {
     font-size: 22px;
@@ -365,37 +382,42 @@
     line-height: 26px;
     font-style: normal;
   }
+
   .text-h4-bold {
     font-size: 22px;
     font-weight: 700;
     line-height: 26px;
     font-style: normal;
   }
+
   .text-h4-medium {
     font-size: 22px;
     font-weight: 600;
     line-height: 26px;
     font-style: normal;
   }
+
   .text-h4-regular {
     font-size: 22px;
     font-weight: 400;
     line-height: 26px;
     font-style: normal;
   }
+
   .text-h4-light {
     font-size: 22px;
     font-weight: 400;
     line-height: 26px;
     font-style: normal;
   }
+
   .text-h4-thin {
     font-size: 22px;
     font-weight: 300;
     line-height: 26px;
     font-style: normal;
   }
- 
+
   /* H5 Variants */
   .text-h5-black {
     font-size: 19px;
@@ -403,37 +425,42 @@
     line-height: 23px;
     font-style: normal;
   }
+
   .text-h5-bold {
     font-size: 19px;
     font-weight: 700;
     line-height: 23px;
     font-style: normal;
   }
+
   .text-h5-medium {
     font-size: 19px;
     font-weight: 600;
     line-height: 23px;
     font-style: normal;
   }
+
   .text-h5-regular {
     font-size: 19px;
     font-weight: 400;
     line-height: 23px;
     font-style: normal;
   }
+
   .text-h5-light {
     font-size: 19px;
     font-weight: 400;
     line-height: 23px;
     font-style: normal;
   }
+
   .text-h5-thin {
     font-size: 19px;
     font-weight: 300;
     line-height: 23px;
     font-style: normal;
   }
- 
+
   /* Title1 Variants */
   .text-title1-black {
     font-size: 16px;
@@ -441,37 +468,42 @@
     line-height: 19px;
     font-style: normal;
   }
+
   .text-title1-bold {
     font-size: 16px;
     font-weight: 700;
     line-height: 19px;
     font-style: normal;
   }
+
   .text-title1-medium {
     font-size: 16px;
     font-weight: 600;
     line-height: 23px;
     font-style: normal;
   }
+
   .text-title1-regular {
     font-size: 16px;
     font-weight: 400;
     line-height: 25px;
     font-style: normal;
   }
+
   .text-title1-light {
     font-size: 16px;
     font-weight: 400;
     line-height: 23px;
     font-style: normal;
   }
+
   .text-title1-thin {
     font-size: 16px;
     font-weight: 300;
     line-height: 19px;
     font-style: normal;
   }
- 
+
   /* Title2 Variants */
   .text-title2-black {
     font-size: 14px;
@@ -479,37 +511,42 @@
     line-height: 16px;
     font-style: normal;
   }
+
   .text-title2-bold {
     font-size: 14px;
     font-weight: 700;
     line-height: 16px;
     font-style: normal;
   }
+
   .text-title2-medium {
     font-size: 14px;
     font-weight: 600;
     line-height: 16px;
     font-style: normal;
   }
+
   .text-title2-regular {
     font-size: 14px;
     font-weight: 400;
     line-height: 16px;
     font-style: normal;
   }
+
   .text-title2-light {
     font-size: 14px;
     font-weight: 400;
     line-height: 16px;
     font-style: normal;
   }
+
   .text-title2-thin {
     font-size: 14px;
     font-weight: 300;
     line-height: 16px;
     font-style: normal;
   }
- 
+
   /* Body Variants */
   .text-body-black {
     font-size: 12px;
@@ -517,37 +554,42 @@
     line-height: 14px;
     font-style: normal;
   }
+
   .text-body-bold {
     font-size: 12px;
     font-weight: 700;
     line-height: 14px;
     font-style: normal;
   }
+
   .text-body-medium {
     font-size: 12px;
     font-weight: 600;
     line-height: 14px;
     font-style: normal;
   }
+
   .text-body-regular {
     font-size: 12px;
     font-weight: 400;
     line-height: 14px;
     font-style: normal;
   }
+
   .text-body-light {
     font-size: 12px;
     font-weight: 400;
     line-height: 14px;
     font-style: normal;
   }
+
   .text-body-thin {
     font-size: 12px;
     font-weight: 300;
     line-height: 14px;
     font-style: normal;
   }
- 
+
   /* Caption Variants */
   .text-caption-black {
     font-size: 11px;
@@ -555,30 +597,35 @@
     line-height: 13px;
     font-style: normal;
   }
+
   .text-caption-bold {
     font-size: 11px;
     font-weight: 700;
     line-height: 13px;
     font-style: normal;
   }
+
   .text-caption-medium {
     font-size: 11px;
     font-weight: 600;
     line-height: 13px;
     font-style: normal;
   }
+
   .text-caption-regular {
     font-size: 11px;
     font-weight: 400;
     line-height: 13px;
     font-style: normal;
   }
+
   .text-caption-light {
     font-size: 11px;
     font-weight: 400;
     line-height: 13px;
     font-style: normal;
   }
+
   .text-caption-thin {
     font-size: 11px;
     font-weight: 300;

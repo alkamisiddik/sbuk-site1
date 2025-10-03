@@ -20,17 +20,25 @@ export default function Carousel() {
         <div className="relative w-full h-dvh">
             {/* Slides */}
             <AnimatePresence>
-                <motion.img
+                <motion.div
                     key={slides[currentSlide].id}
-                    src={slides[currentSlide].src}
-                    alt={slides[currentSlide].alt}
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
                     exit={{ opacity: 0 }}
                     transition={{ duration: 1 }}
-                    className="absolute w-full h-full object-cover"
-                />
+                    className="absolute w-full h-full"
+                >
+                    {/* The image */}
+                    <img
+                        src={slides[currentSlide].src}
+                        alt={slides[currentSlide].alt}
+                        className="w-full h-full object-cover"
+                    />
+                    {/* Gradient overlay */}
+                    <div className="absolute inset-0 bg-gradient-to-r from-[#21409AD6] from-0% to-[84%]" />
+                </motion.div>
             </AnimatePresence>
+
 
             {/* <img src={'/images/home1.png'} alt="image" /> */}
 

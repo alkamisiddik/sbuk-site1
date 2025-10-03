@@ -6,6 +6,9 @@ import MiddleComponent from "@/components/home/MiddleComponent";
 import AboutUs from "@/components/about/AboutUs";
 import ServiceList from "@/components/services/ServiceList";
 import Finance from "@/components/finance/Finance";
+import Feedback from "@/components/customerFeedback/feedback";
+import Announcements from "@/components/announcement/Announcement";
+import ContactPage from "@/components/contact/Contact";
 
 export default function Home() {
 
@@ -18,6 +21,9 @@ export default function Home() {
       <AboutUs />
       <ServiceList />
       <Finance />
+      <Feedback />
+      <Announcements />
+      <ContactPage />
     </>
   );
 }
