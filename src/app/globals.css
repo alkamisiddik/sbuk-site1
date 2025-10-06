@@ -77,6 +77,8 @@
   --sidebar-accent-foreground: oklch(0.205 0 0);
   --sidebar-border: oklch(0.922 0 0);
   --sidebar-ring: oklch(0.708 0 0);
+
+  --global-px: 120px;
 }
 
 .dark {
@@ -123,24 +125,9 @@
     scrollbar-width: none;
   }
 
-  .bg-primary-50 {
-    background-color: rgb(233, 236, 245)
-  }
-
-  .bg-primary-500 {
-    background-color: rgb(33, 64, 154)
-  }
-
-  .text-highlight-500 {
-    color: rgb(227, 169, 31);
-  }
-
-  .bg-highlight-500 {
-    background-color: rgb(227, 169, 31)
-  }
-
-  .border-highlight-500 {
-    border-color: rgb(227, 169, 31)
+  .global-px {
+    padding-left: var(--global-px);
+    padding-right: var(--global-px);
   }
 }
 
@@ -241,6 +228,7 @@
 
   /* Font Family */
   --font-family-primary: "Roboto", sans-serif;
+  --font-family-helvetica: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 /* Custom Typography Utilities */

@@ -97,10 +97,10 @@ const ServiceList = () => {
                                     <li key={item.label} className="flex items-center">
                                         <Link
                                             href={item.href}
-                                            className="flex items-center gap-2 text-base text-black font-normal hover:font-medium hover:underline hover:text-primary hover:-translate-y-1 hover:underline-offset-8"
+                                            className="group inline-flex items-center gap-2 text-base text-black font-medium hover:underline hover:underline-offset-8 hover:text-secondary-500 hover:-translate-y-[2px] transition-all duration-100"
                                         >
-                                            {item.label}
-                                            <ArrowUpRight />
+                                            <span className="opacity-70 group-hover:opacity-100">{item.label}</span>
+                                            <ArrowUpRight className="translate-x-[-4px] transition-all duration-100 group-hover:translate-x-0 hover:text-secondary-500" />
                                         </Link>
                                     </li>
                                 ))}

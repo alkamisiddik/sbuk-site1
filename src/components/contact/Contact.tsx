@@ -1,10 +1,8 @@
 "use client"
 
 import { useState } from "react"
-import { ArrowRight, ArrowLeft, ArrowUpRight } from "lucide-react"
-import { Button } from "@/components/ui/button"
-import { Input } from "@/components/ui/input"
-import Image from "next/image"
+import { ArrowUpRight } from "lucide-react"
+import { motion } from "framer-motion";
 
 const announcements = [
     {
@@ -37,7 +35,7 @@ export default function ContactPage() {
 
     return (
         <section className="relative bg-primary-500 h-[640px] text-white">
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-[307px] ml-[200px]">
+            <div className="flex justify-between global-px">
                 {/* Left side */}
                 <div>
                     {/* Video box */}
@@ -52,23 +50,22 @@ export default function ContactPage() {
                         />
                     </div>
                     <div>
-                        <h2 className="text-4xl md:text-5xl font-bold font-helvetica mt-[38.81] mb-4">
+                        <h2 className="text-5xl font-bold font-family-helvetica mt-[38.81] mb-3 leading-[119%]">
                             Let’s get the conversation going
                         </h2>
-                        <p className="text-base font-medium text-primary-100 mb-8 max-w-4/5">
-                            Learn more about how FIS can help you run, grow, protect and connect
-                            your business with unparalleled confidence.
+                        <p className="text-base font-medium max-w-6/7 text-primary-100 mb-9 leading-[160%] tracking-normal font-family-helvetica">
+                            Learn more about how FIS can help you run, grow, protect and connect your business with unparalleled confidence.
                         </p>
 
                         {/* Email input with button */}
-                        <div className="flex items-center bg-[#0E1E4C] rounded-lg overflow-hidden max-w-md">
+                        <div className="flex items-center bg-primary-800 rounded-xl max-w-[508px] h-[68px] py-3 pl-6 pr-3">
                             <input
                                 type="email"
                                 placeholder="Enter email address"
-                                className="flex-1 bg-transparent text-white placeholder-gray-400 px-4 py-4 focus:outline-none"
+                                className="flex-1 bg-transparent text-white font-family-helvetica placeholder-neutral-500 px-4 py-4 focus:outline-none"
                             />
-                            <button className="bg-[#F3B33D] hover:bg-[#D89C2F] text-white px-4 py-4 flex items-center justify-center">
-                                <ArrowUpRight className="w-5 h-5" />
+                            <button className="bg-highlight-500 text-white h-[44px] w-[44px] p-2 gap-[10px] rounded-md flex items-center justify-center">
+                                <ArrowUpRight />
                             </button>
                         </div>
                     </div>
@@ -77,30 +74,41 @@ export default function ContactPage() {
                 {/* Right side */}
                 <div className="flex flex-col gap-8 mt-[137.81px] h-[364px] w-[476px]">
                     <div>
-                        <div className="bg-[#FFFFFF14] pt-4 pr-6 pb-4 pl-6 rounded-xl shadow">
-                            <h3 className="font-semibold mb-3">How We Can Help</h3>
-                            <ul className="space-y-2 text-gray-100 text-sm">
-                                <li>• Service inquiries and consultations</li>
-                                <li>• Partnership opportunities</li>
-                                <li>• Trade information and advisory support</li>
+                        <div className="bg-[#FFFFFF14] px-6 py-4 rounded-xl">
+                            <h3 className="font-bold text-[19px] leading-[120%] font-family-helvetica mb-[11px]">How We Can Help</h3>
+                            <ul className="list-disc px-6 space-y-[11px] text-[#FFFFFF] text-md font-family-helvetica font-normal leading-[160%]">
+                                <li>Service inquiries and consultations</li>
+                                <li>Partnership opportunities</li>
+                                <li>Trade information and advisory support</li>
                             </ul>
                         </div>
                     </div>
                     <div>
-                        <div className="bg-[#FFFFFF14] p-6 rounded-xl shadow">
-                            <h3 className="font-semibold mb-3">Why Choose Us?</h3>
-                            <ul className="space-y-2 text-gray-100 text-sm">
-                                <li>• Trusted partner for trade and project solutions</li>
-                                <li>• Proven expertise in international markets</li>
-                                <li>• Client-focused service approach</li>
+                        <div className="bg-[#FFFFFF14] px-4 py-6 rounded-xl">
+                            <h3 className="font-bold text-[19px] leading-[120%] font-family-helvetica mb-[11px]">Why Choose Us?</h3>
+                            <ul className="list-disc px-6 space-y-[11px] text-[#FFFFFF] text-[16px] font-family-helvetica font-normal leading-[160%]">
+                                <li>Trusted partner for trade and project solutions</li>
+                                <li>Proven expertise in international markets</li>
+                                <li>Client-focused service approach</li>
                             </ul>
                         </div>
                     </div>
                 </div>
             </div>
 
-            {/* Background decorative shapes (optional) */}
-            <div className="absolute top-0 left-0">
+            {/* Top vector */}
+            <motion.div
+                className="absolute left-0 top-0 origin-top-left"
+                animate={{
+                    scale: [1, 1.2, 1.15, 1.25, 1],
+                    opacity: [0.5, 0.7, 0.6, 0.8, 0.5],
+                }}
+                transition={{
+                    duration: 5,
+                    repeat: Infinity,
+                    ease: [0.2, 0.0, 0.2, 1], // Custom cubic-bezier for smooth flow
+                }}
+            >
                 <svg
                     width="199"
                     height="200"
@@ -115,10 +123,21 @@ export default function ContactPage() {
                         fillOpacity="0.16"
                     />
                 </svg>
-            </div>
+            </motion.div>
 
             {/* Bottom vector */}
-            <div className="absolute bottom-0 right-0">
+            <motion.div
+                className="absolute bottom-0 right-0 origin-top-right"
+                animate={{
+                    scale: [1, 1.2, 1.15, 1.25, 1],
+                    opacity: [0.5, 0.7, 0.6, 0.8, 0.5],
+                }}
+                transition={{
+                    duration: 5,
+                    repeat: Infinity,
+                    ease: [0.2, 0.0, 0.2, 1], // Custom cubic-bezier for smooth flow
+                }}
+            >
                 <svg
                     width="165"
                     height="165"
@@ -132,7 +151,7 @@ export default function ContactPage() {
                         fillOpacity="0.16"
                     />
                 </svg>
-            </div>
+            </motion.div>
         </section>
     )
 }

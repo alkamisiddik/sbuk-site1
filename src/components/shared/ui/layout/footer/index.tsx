@@ -1,34 +1,47 @@
-import { Youtube, Facebook, Twitter, Linkedin } from "lucide-react";
+import { Youtube, Facebook, Twitter, Linkedin, ArrowUpRight } from "lucide-react";
+import Link from "next/link";
 
 const Footer = () => {
-    const keyServices = [
-        "Trade & Project Financing",
-        "Export Development",
-        "Guarantees",
-        "Trade Information & Advisory",
+    const data = [
+        {
+            title: "Key Services",
+            items: [
+                { label: "Trade & Project Financing", href: "/services/trade-financing" },
+                { label: "Export Development", href: "/services/export-development" },
+                { label: "Guarantees", href: "/services/guarantees" },
+                { label: "Trade Information & Advisory", href: "/services/trade-advisory" },
+            ],
+        },
+        {
+            title: "About Us",
+            items: [
+                { label: "Vision & Mission", href: "/about/vision-mission" },
+                { label: "Our Strategy", href: "/about/strategy" },
+                { label: "Organizational Structure", href: "/about/structure" },
+                { label: "Board of Directors", href: "/about/board" },
+                { label: "Management Team", href: "/about/team" },
+                { label: "Corporate Governance", href: "/about/governance" },
+            ],
+        },
+        {
+            title: "Media",
+            items: [
+                { label: "News", href: "/media/news" },
+                { label: "Events (Upcoming and Past)", href: "/media/events" },
+                { label: "Press Releases", href: "/media/press" },
+                { label: "Insights", href: "/media/insights" },
+            ],
+        },
+        {
+            title: "Career",
+            items: [
+                { label: "Job Vacancies", href: "/career/jobs" },
+                { label: "Internship Opportunities", href: "/career/internships" },
+                { label: "Employee Value Proposition", href: "/career/value-proposition" },
+            ],
+        },
     ];
 
-    const aboutUs = [
-        "Vision & Mission",
-        "Our Strategy",
-        "Organizational Structure",
-        "Board of Directors",
-        "Management Team",
-        "Corporate Governance",
-    ];
-
-    const media = [
-        "News",
-        "Events (Upcoming and Past)",
-        "Press Releases",
-        "Insights",
-    ];
-
-    const career = [
-        "Job Vacancies",
-        "Internship Opportunities",
-        "Employee Value Proposition",
-    ];
 
     const socialLinks = [
         { icon: Youtube, href: "#", label: "YouTube" },
@@ -38,112 +51,96 @@ const Footer = () => {
     ];
 
     return (
-        <footer className="bg-[#0E1B41] primary-900 text-white relative overflow-hidden">
-            <div className="container mx-auto px-6 py-12">
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 mb-12">
-                    {/* Logo and Description */}
-                    <div className="lg:col-span-1">
-                        <div className="flex flex-col gap-2 mb-4">
-                            <div className="text-[hsl(var(--footer-accent))] font-bold text-2xl">
-                                <img src='/images/logo.png' alt="logo" />
+        <footer className="bg-primary-900 text-white relative pb-10">
+            <div className="global-px py-[80px]">
+                <div className="grid grid-cols-6">
+                    <div className="col-span-2 w-[350px]">
+                        <div className="flex flex-col">
+                            <div className="h-[50.39px] w-[107.5px]">
+                                <img src='/images/logo_footer.png' alt="logo" />
                             </div>
-                            <div>
-                                <div className="text-xs">SONALI BANGLADESH (UK) LIMITED</div>
+                            <div className="mt-1">
+                                <div className="font-family-helvetica font-medium text-[9px] leading-[160%] uppercase">SONALI BANGLADESH (UK) LIMITED</div>
                             </div>
                         </div>
-                        <p className="text-sm text-gray-300 leading-relaxed">
+                        <p className="text-sm text-[#FFFFFF] leading-[140%] font-normal font-family-helvetica mt-6">
                             Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled.
                         </p>
                     </div>
+                    <div className="col-span-4">
+                        <div className="grid grid-cols-4 gap-[93px]">
+                            {data.map((services, index) => (
+                                <div key={index}>
+                                    <h3 className="font-medium font-family-helvetica text-[22px] leading-[120%] mb-6">
+                                        {services.title}
+                                    </h3>
 
-                    {/* Key Services */}
-                    <div>
-                        <h3 className="font-semibold text-lg mb-4">Key Services</h3>
-                        <ul className="space-y-2">
-                            {keyServices.map((service, index) => (
-                                <li key={index}>
-                                    <a href="#" className="text-sm text-gray-300 hover:text-[hsl(var(--footer-accent))] transition-colors">
-                                        {service}
-                                    </a>
-                                </li>
+                                    <ul className="space-y-4">
+                                        {services.items.map((service, idx) => (
+                                            <li key={idx}>
+                                                <Link
+                                                    href={service.href}
+                                                    className="group inline-flex items-center gap-2  whitespace-nowrap text-base font-normal font-family-helvetica leading-[160%] transition-all duration-100 hover:underline hover:underline-offset-8 hover:text-secondary-500 hover:-translate-y-[2px]"
+                                                >
+                                                    {service.label}
+                                                    <ArrowUpRight className="opacity-0 translate-x-[-4px] transition-all duration-100 group-hover:opacity-100 group-hover:translate-x-0 hover:text-secondary-500" />
+                                                </Link>
+                                            </li>
+                                        ))}
+                                    </ul>
+                                </div>
                             ))}
-                        </ul>
-                    </div>
-
-                    {/* About Us */}
-                    <div>
-                        <h3 className="font-semibold text-lg mb-4">About Us</h3>
-                        <ul className="space-y-2">
-                            {aboutUs.map((item, index) => (
-                                <li key={index}>
-                                    <a href="#" className="text-sm text-gray-300 hover:text-[hsl(var(--footer-accent))] transition-colors">
-                                        {item}
-                                    </a>
-                                </li>
-                            ))}
-                        </ul>
-                    </div>
-
-                    {/* Media */}
-                    <div>
-                        <h3 className="font-semibold text-lg mb-4">Media</h3>
-                        <ul className="space-y-2">
-                            {media.map((item, index) => (
-                                <li key={index}>
-                                    <a href="#" className="text-sm text-gray-300 hover:text-[hsl(var(--footer-accent))] transition-colors">
-                                        {item}
-                                    </a>
-                                </li>
-                            ))}
-                        </ul>
-                    </div>
-
-                    {/* Career */}
-                    <div>
-                        <h3 className="font-semibold text-lg mb-4">Career</h3>
-                        <ul className="space-y-2">
-                            {career.map((item, index) => (
-                                <li key={index}>
-                                    <a href="#" className="text-sm text-gray-300 hover:text-[hsl(var(--footer-accent))] transition-colors">
-                                        {item}
-                                    </a>
-                                </li>
-                            ))}
-                        </ul>
+                        </div>
                     </div>
                 </div>
-
-                {/* Bottom Section */}
-                <div className="border-t border-gray-600 pt-6 flex flex-col md:flex-row justify-between items-center gap-4">
-                    <p className="text-sm text-gray-300">
-                        © 2025 Sonali Bangladesh (UK) Limited. All Right Reserved
-                    </p>
-                    <div className="flex gap-3">
-                        {socialLinks.map((social, index) => (
-                            <a
-                                key={index}
-                                href={social.href}
-                                aria-label={social.label}
-                                className="w-11 h-11 rounded-full bg-[#E3A91F] flex items-center justify-center hover:bg-[#E3A91F]/90 transition-colors"
-                            >
-                                <social.icon fill="text-primary-900" strokeWidth={0} className="w-5 h-5 text-primary-900" />
-                            </a>
-                        ))}
+                <div className="pt-10">
+                    <div className="border h-0 border-neutral-600 opacity-50" />
+                </div>
+                <div className="py-10">
+                    <div className="h-13 flex justify-between">
+                        <p className="text-sm text-gray-300">
+                            © 2025 Sonali Bangladesh (UK) Limited. All Right Reserved
+                        </p>
+                        <div className="flex gap-3">
+                            {socialLinks.map((social, index) => (
+                                <a
+                                    key={index}
+                                    href={social.href}
+                                    aria-label={social.label}
+                                    className="w-11 h-11 rounded-full bg-[#E3A91F] flex items-center justify-center hover:bg-[#E3A91F]/90 transition-colors"
+                                >
+                                    <social.icon fill="text-primary-900" strokeWidth={0} className="w-5 h-5 text-primary-900" />
+                                </a>
+                            ))}
+                        </div>
                     </div>
                 </div>
             </div>
 
             {/* Decorative Pattern */}
-            <div className="absolute bottom-0 left-0 right-0 h-24 overflow-hidden opacity-30">
-                <div className="flex justify-around items-end h-full">
-                    {[...Array(12)].map((_, i) => (
-                        <div key={i} className="relative w-24 h-24">
-                            <div className="absolute bottom-0 left-0 w-24 h-24 rounded-full bg-secondary-500"
-                                style={{ clipPath: 'polygon(0 50%, 50% 50%, 50% 100%, 0 100%)' }} />
-                            <div className="absolute bottom-0 right-0 w-24 h-24 rounded-full bg-secondary-500"
-                                style={{ clipPath: 'polygon(50% 50%, 100% 50%, 100% 100%, 50% 100%)' }} />
-                        </div>
-                    ))}
+            <div className="absolute bottom-0 left-0 right-0 h-[130.16px] opacity-60">
+                <div className="flex justify-around items-end w-full">
+                    <svg width="1920" height="131" viewBox="0 0 1920 131" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_1752_15836)">
+                            <path d="M332.691 4.91051L332.692 114.847C326.809 106.112 319.29 98.5865 310.554 92.7109C297.579 83.9617 281.943 78.8616 265.12 78.8618C248.296 78.862 232.661 83.9624 219.685 92.712C210.957 98.5877 203.431 106.114 197.548 114.849C188.806 127.824 183.706 143.459 183.706 160.289C183.706 177.12 188.807 192.748 197.549 205.729C203.283 214.237 210.574 221.592 219.018 227.403L110.202 227.405L110.202 226.722C142.014 221.258 166.207 193.587 166.206 160.29C166.206 126.992 142.005 99.3212 110.2 93.8443L110.2 92.7133L197.541 92.7123L197.54 4.91208L198.301 4.91207C203.167 37.3703 231.23 62.2525 265.112 62.2521C298.994 62.2517 327.057 37.3688 331.923 4.91052L332.684 4.91051L332.691 4.91051Z" fill="#AB782B" />
+                            <path d="M1485.69 4.91051L1485.69 114.847C1479.81 106.112 1472.29 98.5865 1463.55 92.7109C1450.58 83.9617 1434.94 78.8616 1418.12 78.8618C1401.3 78.862 1385.66 83.9624 1372.69 92.712C1363.96 98.5877 1356.43 106.114 1350.55 114.849C1341.81 127.824 1336.71 143.459 1336.71 160.289C1336.71 177.12 1341.81 192.748 1350.55 205.729C1356.28 214.237 1363.57 221.592 1372.02 227.403L1263.2 227.405L1263.2 226.722C1295.01 221.258 1319.21 193.587 1319.21 160.29C1319.21 126.992 1295.01 99.3212 1263.2 93.8443L1263.2 92.7133L1350.54 92.7123L1350.54 4.91208L1351.3 4.91207C1356.17 37.3703 1384.23 62.2525 1418.11 62.2521C1451.99 62.2517 1480.06 37.3688 1484.92 4.91052L1485.68 4.91051L1485.69 4.91051Z" fill="#AB782B" />
+                            <path d="M924.519 6.88121L924.52 116.818C918.637 108.083 911.118 100.557 902.383 94.6816C889.407 85.9324 873.772 80.8323 856.948 80.8325C840.124 80.8327 824.489 85.9331 811.514 94.6827C802.785 100.558 795.259 108.084 789.376 116.82C780.634 129.795 775.534 145.43 775.534 162.26C775.534 179.09 780.635 194.718 789.377 207.7C795.111 216.208 802.403 223.563 810.846 229.374L702.03 229.375L702.03 228.693C733.842 223.229 758.035 195.558 758.034 162.26C758.034 128.963 733.833 101.292 702.028 95.815L702.028 94.684L789.369 94.683L789.368 6.88278L790.129 6.88277C794.995 39.341 823.059 64.2232 856.941 64.2228C890.823 64.2224 918.885 39.3395 923.751 6.88122L924.512 6.88121L924.519 6.88121Z" fill="#AB782B" />
+                            <path d="M2077.52 6.88121L2077.52 116.818C2071.64 108.083 2064.12 100.557 2055.38 94.6816C2042.41 85.9324 2026.77 80.8323 2009.95 80.8325C1993.12 80.8327 1977.49 85.9331 1964.51 94.6827C1955.79 100.558 1948.26 108.084 1942.38 116.82C1933.63 129.795 1928.53 145.43 1928.53 162.26C1928.53 179.09 1933.63 194.718 1942.38 207.7C1948.11 216.208 1955.4 223.563 1963.85 229.374L1855.03 229.375L1855.03 228.693C1886.84 223.229 1911.03 195.558 1911.03 162.26C1911.03 128.963 1886.83 101.292 1855.03 95.815L1855.03 94.684L1942.37 94.683L1942.37 6.88278L1943.13 6.88277C1948 39.341 1976.06 64.2232 2009.94 64.2228C2043.82 64.2224 2071.89 39.3395 2076.75 6.88122L2077.51 6.88121L2077.52 6.88121Z" fill="#AB782B" />
+                            <path d="M1423.39 -140.957L1423.39 -6.58985C1416.2 -17.2661 1407.01 -26.4644 1396.34 -33.6456C1380.48 -44.3392 1361.37 -50.5726 1340.8 -50.5724C1320.24 -50.5721 1301.13 -44.3382 1285.27 -33.6443C1274.61 -26.4629 1265.41 -17.2644 1258.22 -6.58794C1247.53 9.27024 1241.3 28.3799 1241.3 48.9502C1241.3 69.5204 1247.53 88.6213 1258.22 104.488C1265.23 114.886 1274.14 123.876 1284.46 130.979L1151.46 130.98L1151.46 130.145C1190.34 123.468 1219.91 89.6475 1219.91 48.9504C1219.91 8.25333 1190.33 -25.5664 1151.46 -32.2604L1151.46 -33.6428L1258.21 -33.644L1258.21 -140.955L1259.14 -140.955C1265.08 -101.284 1299.38 -70.8726 1340.8 -70.8731C1382.21 -70.8736 1416.51 -101.286 1422.45 -140.957L1423.38 -140.957L1423.39 -140.957Z" fill="#AB782B" />
+                            <path d="M618.469 -140.948L618.471 -6.58106C611.281 -17.2573 602.091 -26.4556 591.414 -33.6368C575.555 -44.3304 556.445 -50.5638 535.883 -50.5636C515.32 -50.5634 496.21 -44.3295 480.352 -33.6355C469.684 -26.4541 460.485 -17.2556 453.295 -6.57915C442.61 9.27902 436.376 28.3887 436.376 48.959C436.377 69.5292 442.611 88.6301 453.296 104.497C460.304 114.895 469.216 123.884 479.536 130.987L346.538 130.989L346.538 130.154C385.42 123.477 414.989 89.6563 414.988 48.9592C414.988 8.26212 385.409 -25.5576 346.536 -32.2516L346.536 -33.634L453.286 -33.6352L453.285 -140.947L454.215 -140.947C460.163 -101.275 494.462 -70.8638 535.874 -70.8643C577.285 -70.8648 611.584 -101.277 617.53 -140.948L618.461 -140.948L618.469 -140.948Z" fill="#AB782B" />
+                            <path d="M1771.47 -140.948L1771.47 -6.58106C1764.28 -17.2573 1755.09 -26.4556 1744.41 -33.6368C1728.56 -44.3304 1709.44 -50.5638 1688.88 -50.5636C1668.32 -50.5634 1649.21 -44.3295 1633.35 -33.6355C1622.68 -26.4541 1613.49 -17.2556 1606.3 -6.57915C1595.61 9.27902 1589.38 28.3887 1589.38 48.959C1589.38 69.5292 1595.61 88.6301 1606.3 104.497C1613.3 114.895 1622.22 123.884 1632.54 130.987L1499.54 130.989L1499.54 130.154C1538.42 123.477 1567.99 89.6563 1567.99 48.9592C1567.99 8.26212 1538.41 -25.5576 1499.54 -32.2516L1499.54 -33.634L1606.29 -33.6352L1606.28 -140.947L1607.22 -140.947C1613.16 -101.275 1647.46 -70.8638 1688.87 -70.8643C1730.28 -70.8648 1764.58 -101.277 1770.53 -140.948L1771.46 -140.948L1771.47 -140.948Z" fill="#AB782B" />
+                            <path d="M270.883 -140.945L270.885 -6.57715C263.695 -17.2534 254.505 -26.4517 243.828 -33.6329C227.969 -44.3265 208.859 -50.5599 188.297 -50.5597C167.734 -50.5594 148.624 -44.3256 132.766 -33.6316C122.098 -26.4502 112.899 -17.2517 105.709 -6.57524C95.0239 9.28293 88.7903 28.3926 88.7905 48.9629C88.7907 69.5331 95.0248 88.634 105.71 104.501C112.718 114.899 121.63 123.888 131.95 130.991L-1.04763 130.993L-1.04764 130.158C37.8336 123.481 67.4028 89.6602 67.4023 48.9631C67.4018 8.26602 37.8232 -25.5537 -1.04952 -32.2477L-1.04954 -33.6301L105.7 -33.6313L105.699 -140.943L106.629 -140.943C112.577 -101.272 146.876 -70.8599 188.288 -70.8604C229.699 -70.8609 263.998 -101.273 269.944 -140.945L270.875 -140.945L270.883 -140.945Z" fill="#AB782B" />
+                            <path d="M1423.89 -140.945L1423.89 -6.57715C1416.7 -17.2534 1407.51 -26.4517 1396.84 -33.6329C1380.98 -44.3265 1361.87 -50.5599 1341.3 -50.5597C1320.74 -50.5594 1301.63 -44.3256 1285.77 -33.6316C1275.11 -26.4502 1265.91 -17.2517 1258.72 -6.57524C1248.03 9.28293 1241.8 28.3926 1241.8 48.9629C1241.8 69.5331 1248.03 88.634 1258.72 104.501C1265.73 114.899 1274.64 123.888 1284.96 130.991L1151.96 130.993L1151.96 130.158C1190.84 123.481 1220.41 89.6602 1220.41 48.9631C1220.41 8.26602 1190.83 -25.5537 1151.96 -32.2477L1151.96 -33.6301L1258.71 -33.6313L1258.71 -140.943L1259.64 -140.943C1265.58 -101.272 1299.88 -70.8599 1341.3 -70.8604C1382.71 -70.8609 1417.01 -101.273 1422.95 -140.945L1423.88 -140.945L1423.89 -140.945Z" fill="#AB782B" />
+                            <path d="M840.962 -140.95L840.963 -6.58301C833.773 -17.2593 824.583 -26.4576 813.906 -33.6388C798.047 -44.3323 778.937 -50.5658 758.375 -50.5655C737.812 -50.5653 718.702 -44.3314 702.844 -33.6375C692.176 -26.456 682.977 -17.2576 675.787 -6.5811C665.102 9.27707 658.868 28.3868 658.869 48.957C658.869 69.5273 665.103 88.6282 675.789 104.495C682.796 114.893 691.708 123.882 702.028 130.985L569.03 130.987L569.03 130.152C607.912 123.475 637.481 89.6544 637.48 48.9573C637.48 8.26016 607.901 -25.5596 569.029 -32.2536L569.029 -33.6359L675.778 -33.6372L675.777 -140.949L676.707 -140.949C682.655 -101.277 716.954 -70.8658 758.366 -70.8663C799.777 -70.8668 834.076 -101.279 840.023 -140.95L840.953 -140.95L840.962 -140.95Z" fill="#AB782B" />
+                            <path d="M1993.96 -140.95L1993.96 -6.58301C1986.77 -17.2593 1977.58 -26.4576 1966.91 -33.6388C1951.05 -44.3323 1931.94 -50.5658 1911.37 -50.5655C1890.81 -50.5653 1871.7 -44.3314 1855.84 -33.6375C1845.18 -26.456 1835.98 -17.2576 1828.79 -6.5811C1818.1 9.27707 1811.87 28.3868 1811.87 48.957C1811.87 69.5273 1818.1 88.6282 1828.79 104.495C1835.8 114.893 1844.71 123.882 1855.03 130.985L1722.03 130.987L1722.03 130.152C1760.91 123.475 1790.48 89.6544 1790.48 48.9573C1790.48 8.26016 1760.9 -25.5596 1722.03 -32.2536L1722.03 -33.6359L1828.78 -33.6372L1828.78 -140.949L1829.71 -140.949C1835.65 -101.277 1869.95 -70.8658 1911.37 -70.8663C1952.78 -70.8668 1987.08 -101.279 1993.02 -140.95L1993.95 -140.95L1993.96 -140.95Z" fill="#AB782B" />
+                            <path d="M1207.82 -140.955L1207.82 -6.58789C1200.63 -17.2642 1191.44 -26.4624 1180.77 -33.6436C1164.91 -44.3372 1145.8 -50.5707 1125.23 -50.5704C1104.67 -50.5702 1085.56 -44.3363 1069.7 -33.6424C1059.04 -26.4609 1049.84 -17.2624 1042.65 -6.58598C1031.96 9.27219 1025.73 28.3819 1025.73 48.9521C1025.73 69.5224 1031.96 88.6233 1042.65 104.49C1049.66 114.888 1058.57 123.878 1068.89 130.981L935.89 130.982L935.89 130.147C974.771 123.47 1004.34 89.6495 1004.34 48.9524C1004.34 8.25528 974.761 -25.5644 935.888 -32.2584L935.888 -33.6408L1042.64 -33.6421L1042.64 -140.953L1043.57 -140.953C1049.51 -101.282 1083.81 -70.8707 1125.23 -70.8712C1166.64 -70.8716 1200.94 -101.284 1206.88 -140.955L1207.81 -140.955L1207.82 -140.955Z" fill="#AB782B" />
+                        </g>
+                        <defs>
+                            <clipPath id="clip0_1752_15836">
+                                <rect width="130.159" height="1922.09" fill="white" transform="translate(-1.04297 130.993) rotate(-90.0007)" />
+                            </clipPath>
+                        </defs>
+                    </svg>
                 </div>
             </div>
         </footer>
