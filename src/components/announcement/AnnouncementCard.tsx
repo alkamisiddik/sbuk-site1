@@ -9,7 +9,7 @@ function AnnouncementCard({ announcement }) {
 
     return (
         <motion.div
-            className="relative overflow-hidden rounded-lg bg-gray-900 h-[759px] cursor-pointer"
+            className="relative rounded-lg bg-gray-900 h-[759px] cursor-pointer"
             onHoverStart={() => setIsHovered(true)}
             onHoverEnd={() => setIsHovered(false)}
             transition={{ type: "spring", stiffness: 200, damping: 20 }}

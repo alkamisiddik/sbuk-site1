@@ -59,7 +59,7 @@ function NavigationMenuItem({
 }
 
 const navigationMenuTriggerStyle = cva(
-  "group inline-flex h-9 w-max items-center justify-center px-4 py-2 text-md bg-transparent text-white hover:bg-transparent disabled:pointer-events-none disabled:opacity-50 data-[state=open]:bg-transparent focus:bg-transparent outline-none transition-colors duration-200"
+  "group inline-flex h-9 w-max items-center justify-center px-4 py-2 text-md font-medium bg-transparent text-white hover:bg-transparent hover:text-blue-400 disabled:pointer-events-none disabled:opacity-50 data-[state=open]:bg-transparent data-[state=open]:text-blue-400 focus:bg-transparent focus:text-blue-400 outline-none transition-colors duration-200"
 )
 
 function NavigationMenuTrigger({
@@ -89,29 +89,15 @@ function NavigationMenuContent({
   return (
     <NavigationMenuPrimitive.Content
       data-slot="navigation-menu-content"
-      // ✅ Use fixed positioning instead of relative-to-trigger
       className={cn(
-        "fixed left-1/2 top-[67px] -translate-x-1/2 w-[80vw] z-50", // top matches your header height
-
-        // Animations
-        "data-[motion^=from-]:animate-in data-[motion^=to-]:animate-out " +
-          "data-[motion^=from-]:fade-in data-[motion^=to-]:fade-out " +
-          "data-[motion=from-end]:slide-in-from-right-52 " +
-          "data-[motion=from-start]:slide-in-from-left-52 " +
-          "data-[motion=to-end]:slide-out-to-right-52 " +
-          "data-[motion=to-start]:slide-out-to-left-52",
-
-        // Styles
-       "bg-primary/30 backdrop-blur-md border border-white/30",
-        "text-white p-10 mt-2 shadow-xl",
-
+        "absolute -translate-x-1/2 top-full data-[motion^=from-]:animate-in data-[motion^=to-]:animate-out data-[motion^=from-]:fade-in data-[motion^=to-]:fade-out data-[motion=from-end]:slide-in-from-right-52 data-[motion=from-start]:slide-in-from-left-52 data-[motion=to-end]:slide-out-to-right-52 data-[motion=to-start]:slide-out-to-left-52 w-[80vw] z-50",
+        "bg-[#0B1840] text-white p-4 mt-2 rounded-lg shadow-lg border border-gray-700",
         className
       )}
       {...props}
     />
   )
 }
-
 
 function NavigationMenuViewport({
   className,

@@ -3,24 +3,24 @@
 import { useState } from "react"
 import Image from "next/image"
 
-interface AnimatedTestimonialProps {
+interface AnimatedQuote {
     imageSrc: string
     imageAlt: string
 }
 
-export function AnimatedTestimonial({ imageSrc, imageAlt }: AnimatedTestimonialProps) {
-    const [isHovered, setIsHovered] = useState(false)
+export function AnimatedQuote({ imageSrc, imageAlt }: AnimatedQuote) {
+    const [isHovered, setIsHovered] = useState(true)
 
     return (
         <div
             onMouseEnter={() => setIsHovered(true)}
             onMouseLeave={() => setIsHovered(false)}
-            className="relative w-full mx-auto overflow-hidden rounded-2xl bg-white"
+            className="relative w-full overflow-hidden"
         >
             <div className="flex flex-col md:flex-row items-center gap-14">
                 {/* Image Section - Animates from left */}
                 <div
-                    className={`relative flex-shrink-0 overflow-hidden rounded-2xl transition-all duration-700 ease-out ${isHovered ? "translate-x-0 opacity-100" : "-translate-x-[100vw] opacity-0"}`}
+                    className={`relative flex-shrink-0 overflow-hidden transition-all duration-700 ease-out ${isHovered ? "translate-x-0 opacity-100" : "-translate-x-[100vw] opacity-0"}`}
                 >
                     <div className="relative w-[340px] h-[518px]">
                         <Image src={imageSrc || "/placeholder.svg"} alt={imageAlt} fill className="object-cover rounded-2xl" />
@@ -29,45 +29,42 @@ export function AnimatedTestimonial({ imageSrc, imageAlt }: AnimatedTestimonialP
 
                 {/* Text Section - Animates from right */}
                 <div
-                    className={`flex relative self-center flex-col items-start justify-center gap-5 w-[1086px] mb-[2.0px] transform transition-all duration-700 ease-out ${isHovered ? "translate-x-0 opacity-100" : "translate-x-[100vw] opacity-0"
+                    className={`flex relative self-center flex-col items-start justify-center gap-5 ml-4 mb-[2.0px] transform transition-all duration-700 ease-out ${isHovered ? "translate-x-0 opacity-100" : "translate-x-full opacity-0"
                         }`}
                 >
-                    <div className="relative pl-12 pr-12">
-                        {/* Opening quotation mark */}
-                        <svg width="39" height="39" viewBox="0 0 39 39" fill="none" className="absolute left-0 top-0">
-                            <path
-                                d="M29.167 0C34.229 0 38.333 4.104 38.333 9.167C38.333 12.906 36.387 16.524 33.481 17.222C32.361 17.491 31.468 18.93 31.66 20.571C31.917 22.769 33.904 24.989 37.838 26.739C38.715 27.128 38.348 28.446 37.396 28.327C27.142 27.043 20.034 20.358 20 10.9C20 4.395 23.843 0 29.167 0Z"
-                                fill="#99A7D1"
-                            />
-                            <path
-                                d="M9.167 0C14.229 0 18.333 4.104 18.333 9.167C18.333 12.906 16.387 16.524 13.481 17.222C12.361 17.491 11.468 18.93 11.66 20.571C11.917 22.769 13.904 24.989 17.838 26.739C18.715 27.128 18.348 28.446 17.396 28.327C7.142 27.043 0.034 20.358 0 10.9C0 4.395 3.843 0 9.167 0Z"
-                                fill="#99A7D1"
-                            />
-                        </svg>
+                    {/* Opening quotation mark */}
+                    <p className="font-extralight text-gray-900 font-family-helvetica text-5xl leading-[131%] relative">
+                        <span className="relative inline-block align-top mr-3">
+                            <svg
+                                width="32"
+                                height="24"
+                                viewBox="0 0 39 29"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                                className="text-[#99A7D1] fill-[#99A7D1]"
+                            >
+                                <path d="M29.1665 0C34.2292 0 38.3332 4.10406 38.3332 9.16667C38.3332 12.906 36.3866 16.524 33.4813 17.2222C32.3607 17.4915 31.4682 18.9296 31.6599 20.5714C31.9166 22.7689 33.9038 24.989 37.8385 26.7386C38.7145 27.1281 38.3477 28.446 37.3964 28.3269C27.1421 27.0431 20.0341 20.3579 20 10.8997C19.9999 4.39508 23.8429 0 29.1665 0Z" />
+                                <path d="M9.16655 0C14.2292 0 18.3332 4.10406 18.3332 9.16667C18.3332 12.906 16.3866 16.524 13.4813 17.2222C12.3607 17.4915 11.4682 18.9296 11.6599 20.5714C11.9166 22.7689 13.9038 24.989 17.8385 26.7386C18.7145 27.1281 18.3477 28.446 17.3964 28.3269C7.14208 27.0431 0.0341 20.3579 2.94371e-09 10.8997C-0.000122814 4.39508 3.84286 0 9.16655 0Z" />
+                            </svg>
+                        </span>
 
-                        <p className="font-light text-gray-900 text-5xl leading-[62.9px] inline">
-                            At <span className="font-medium text-[#e3a91f]">SBUK</span>, we believe banking is more than transactions,
-                            it's about building trust, empowering businesses, and creating opportunities that shape a better future
-                            for all.
-                        </p>
+                        At <span className="font-bold text-secondary-500">SBUK</span>, we believe banking is more than transactions,
+                        it’s about building trust, empowering businesses, and creating opportunities that shape a better future for all.
 
-                        <svg
-                            width="39"
-                            height="39"
-                            viewBox="0 0 39 39"
-                            fill="none"
-                            className="inline-block align-baseline ml-2 rotate-180"
-                        >
-                            <path
-                                d="M29.167 0C34.229 0 38.333 4.104 38.333 9.167C38.333 12.906 36.387 16.524 33.481 17.222C32.361 17.491 31.468 18.93 31.66 20.571C31.917 22.769 33.904 24.989 37.838 26.739C38.715 27.128 38.348 28.446 37.396 28.327C27.142 27.043 20.034 20.358 20 10.9C20 4.395 23.843 0 29.167 0Z"
-                                fill="#99A7D1"
-                            />
-                            <path
-                                d="M9.167 0C14.229 0 18.333 4.104 18.333 9.167C18.333 12.906 16.387 16.524 13.481 17.222C12.361 17.491 11.468 18.93 11.66 20.571C11.917 22.769 13.904 24.989 17.838 26.739C18.715 27.128 18.348 28.446 17.396 28.327C7.142 27.043 0.034 20.358 0 10.9C0 4.395 3.843 0 9.167 0Z"
-                                fill="#99A7D1"
-                            />
-                        </svg>
-                    </div>
+                        <span className="relative inline-block align-baseline ml-3">
+                            <svg
+                                width="32"
+                                height="24"
+                                viewBox="0 0 39 29"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                                className="text-[#99A7D1] fill-[#99A7D1]"
+                            >
+                                <path d="M9.16939 0C4.10678 0 0.00272179 4.10406 0.00272179 9.16667C0.00272179 12.906 1.9493 16.524 4.85461 17.2222C5.97528 17.4915 6.86777 18.9296 6.676 20.5714C6.41932 22.7689 4.43212 24.989 0.497473 26.7386C-0.378601 27.1281 -0.0117702 28.446 0.939581 28.3269C11.1939 27.0431 18.3018 20.3579 18.3359 10.8997C18.3361 4.39508 14.4931 0 9.16939 0Z" />
+                                <path d="M29.1694 0C24.1068 0 20.0027 4.10406 20.0027 9.16667C20.0027 12.906 21.9493 16.524 24.8546 17.2222C25.9753 17.4915 26.8678 18.9296 26.676 20.5714C26.4193 22.7689 24.4321 24.989 20.4975 26.7386C19.6214 27.1281 19.9882 28.446 20.9396 28.3269C31.1939 27.0431 38.3018 20.3579 38.3359 10.8997C38.3361 4.39508 34.4931 0 29.1694 0Z" />
+                            </svg>
+                        </span>
+                    </p>
 
                     <p className="relative w-fit [font-family:'Helvetica_Neue-Medium',Helvetica] font-medium text-black text-base tracking-[0] leading-[25.6px] whitespace-nowrap pl-12">
                         —&nbsp;&nbsp;MR MASUM BILLAH, CEO AT SBUK

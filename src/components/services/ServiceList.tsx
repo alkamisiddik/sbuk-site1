@@ -1,7 +1,7 @@
 import { ArrowUpRight } from 'lucide-react'
 import Link from 'next/link';
 import React from 'react'
-import { AnimatedTestimonial } from './Quote';
+import { AnimatedQuote } from './Quote';
 
 interface LinkItem {
     label: string;
@@ -77,9 +77,9 @@ const sections: LinkSection[] = [
 
 const ServiceList = () => {
     return (
-        <section className="flex flex-col w-full max-w-[1920px] items-start justify-center gap-2.5 px-[120px] py-6 bg-white rounded-2xl">
-            <div className="flex flex-col items-center gap-12 w-full">
-                <div className="flex flex-wrap justify-between w-full gap-6">
+        <section className="flex flex-col w-full items-start justify-center global-px pt-28 bg-white">
+            <div className="flex flex-col items-center gap-2.5 w-full">
+                <div className="flex flex-wrap justify-between w-full gap-">
                     {sections.map((section) => (
                         <nav
                             key={section.title}
@@ -88,7 +88,7 @@ const ServiceList = () => {
                         >
                             <h2
                                 id={section.title.replace(/\s+/g, "-").toLowerCase()}
-                                className="text-[22px] font-medium leading-[26.4px] text-neutral-900"
+                                className="text-[22px] font-semibold leading-[120%] uppercase text-neutral-900 font-family-helvetica"
                             >
                                 {section.title}
                             </h2>
@@ -97,10 +97,10 @@ const ServiceList = () => {
                                     <li key={item.label} className="flex items-center">
                                         <Link
                                             href={item.href}
-                                            className="group inline-flex items-center gap-2 text-base text-black font-medium hover:underline hover:underline-offset-8 hover:text-secondary-500 hover:-translate-y-[2px] transition-all duration-100"
+                                            className="group inline-flex items-center gap-4 text-base text-black font-medium hover:underline hover:underline-offset-8 hover:text-secondary-500 hover:-translate-y-[2px] transition-all duration-100"
                                         >
-                                            <span className="opacity-70 group-hover:opacity-100">{item.label}</span>
-                                            <ArrowUpRight className="translate-x-[-4px] transition-all duration-100 group-hover:translate-x-0 hover:text-secondary-500" />
+                                            <span className="opacity-70 group-hover:opacity-100 font-family-helvetica font-normal text-md leading-[160%]">{item.label}</span>
+                                            <ArrowUpRight className="translate-x-[-4px] transition-all duration-100 group-hover:translate-x-0 text-primary-500 group-hover:text-secondary-500" />
                                         </Link>
                                     </li>
                                 ))}
@@ -111,7 +111,7 @@ const ServiceList = () => {
             </div>
 
             <div className="mt-28 h-[570px] w-full pt-[22px] pl-[99px]">
-                <AnimatedTestimonial
+                <AnimatedQuote
                     imageSrc="/images/sbuk_md.jpg"
                     imageAlt="Portrait"
                 />
