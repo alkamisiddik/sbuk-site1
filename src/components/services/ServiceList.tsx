@@ -77,14 +77,14 @@ const sections: LinkSection[] = [
 
 const ServiceList = () => {
     return (
-        <section className="flex flex-col w-full items-start justify-center global-px pt-28 bg-white">
-            <div className="flex flex-col items-center gap-2.5 w-full">
-                <div className="flex flex-wrap justify-between w-full gap-">
+        <section className="global-px mt-28">
+            <div className="flex flex-col items-center gap-2.5 py-6 w-full">
+                <div className="flex flex-wrap justify-between w-full gap-12">
                     {sections.map((section) => (
                         <nav
                             key={section.title}
                             aria-labelledby={section.title.replace(/\s+/g, "-").toLowerCase()}
-                            className="flex flex-col items-start gap-6 px-6 py-8 flex-1 bg-white rounded-2xl overflow-hidden"
+                            className="flex flex-col items-start gap-6 py-4 flex-1 bg-white"
                         >
                             <h2
                                 id={section.title.replace(/\s+/g, "-").toLowerCase()}
@@ -97,7 +97,7 @@ const ServiceList = () => {
                                     <li key={item.label} className="flex items-center">
                                         <Link
                                             href={item.href}
-                                            className="group inline-flex items-center gap-4 text-base text-black font-medium hover:underline hover:underline-offset-8 hover:text-secondary-500 hover:-translate-y-[2px] transition-all duration-100"
+                                            className="group inline-flex items-center gap-4 hover:underline hover:underline-offset-8 hover:-translate-y-[2px] transition-all duration-300"
                                         >
                                             <span className="opacity-70 group-hover:opacity-100 font-family-helvetica font-normal text-md leading-[160%]">{item.label}</span>
                                             <ArrowUpRight className="translate-x-[-4px] transition-all duration-100 group-hover:translate-x-0 text-primary-500 group-hover:text-secondary-500" />
@@ -110,7 +110,7 @@ const ServiceList = () => {
                 </div>
             </div>
 
-            <div className="mt-28 h-[570px] w-full pt-[22px] pl-[99px]">
+            <div className="mt-28 h-[570px] w-full pt-[22px] pl-[80px]">
                 <AnimatedQuote
                     imageSrc="/images/sbuk_md.jpg"
                     imageAlt="Portrait"

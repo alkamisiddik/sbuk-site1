@@ -34,8 +34,8 @@ export default function ContactPage() {
     }
 
     return (
-        <section className="relative bg-primary-500 h-[640px] text-white">
-            <div className="flex justify-between global-px">
+        <section className="relative bg-primary-500 h-[640px] global-px text-white">
+            <div className="flex justify-between">
                 {/* Left side */}
                 <div>
                     {/* Video box */}
@@ -46,7 +46,7 @@ export default function ContactPage() {
                             muted
                             loop
                             playsInline
-                            className="w-full h-full object-cover"
+                            className="w-full h-full object-cover z-100"
                         />
                     </div>
                     <div>
@@ -75,8 +75,8 @@ export default function ContactPage() {
                 <div className="flex flex-col gap-8 mt-[137.81px] h-[364px] w-[476px]">
                     <div>
                         <div className="bg-[#FFFFFF14] px-6 py-4 rounded-xl">
-                            <h3 className="font-bold text-[19px] leading-[120%] font-family-helvetica mb-[11px]">How We Can Help</h3>
-                            <ul className="list-disc px-6 space-y-[11px] text-[#FFFFFF] text-md font-family-helvetica font-normal leading-[160%]">
+                            <h5 className="font-bold text-[19px] leading-[120%] font-family-helvetica pb-[11px]">How We Can Help</h5>
+                            <ul className="list-disc px-7 space-y-[11px] text-[#FFFFFF] text-md font-family-helvetica font-normal leading-[160%]">
                                 <li>Service inquiries and consultations</li>
                                 <li>Partnership opportunities</li>
                                 <li>Trade information and advisory support</li>
@@ -85,8 +85,8 @@ export default function ContactPage() {
                     </div>
                     <div>
                         <div className="bg-[#FFFFFF14] px-4 py-6 rounded-xl">
-                            <h3 className="font-bold text-[19px] leading-[120%] font-family-helvetica mb-[11px]">Why Choose Us?</h3>
-                            <ul className="list-disc px-6 space-y-[11px] text-[#FFFFFF] text-[16px] font-family-helvetica font-normal leading-[160%]">
+                            <h5 className="font-bold text-[19px] leading-[120%] font-family-helvetica pb-[11px]">Why Choose Us?</h5>
+                            <ul className="list-disc px-7 space-y-[11px] text-[#FFFFFF] text-[16px] font-family-helvetica font-normal leading-[160%]">
                                 <li>Trusted partner for trade and project solutions</li>
                                 <li>Proven expertise in international markets</li>
                                 <li>Client-focused service approach</li>
@@ -98,7 +98,7 @@ export default function ContactPage() {
 
             {/* Top vector */}
             <motion.div
-                className="absolute left-0 top-0 origin-top-left"
+                className="absolute left-0 top-0 origin-top-left z-0"
                 animate={{
                     scale: [1, 1.2, 1.15, 1.25, 1],
                     opacity: [0.5, 0.7, 0.6, 0.8, 0.5],

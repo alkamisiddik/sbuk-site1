@@ -78,7 +78,47 @@
   --sidebar-border: oklch(0.922 0 0);
   --sidebar-ring: oklch(0.708 0 0);
 
-  --global-px: 120px;
+  --global-px: 16px;
+  --header-Height: 60px;
+}
+
+@media (min-width: 640px) {
+  :root {
+    --global-px: 24px;
+    --header-Height: 70px;
+  }
+}
+
+/* Medium screens (768px and up) */
+@media (min-width: 768px) {
+  :root {
+    --global-px: 40px;
+    --header-Height: 80px;
+  }
+}
+
+/* Large screens (1024px and up) */
+@media (min-width: 1024px) {
+  :root {
+    --global-px: 60px;
+    --header-Height: 85px;
+  }
+}
+
+/* Extra large screens (1280px and up) */
+@media (min-width: 1280px) {
+  :root {
+    --global-px: 80px;
+    --header-Height: 90px;
+  }
+}
+
+/* 2XL screens (1536px and up) */
+@media (min-width: 1536px) {
+  :root {
+    --global-px: 120px;
+    --header-Height: 90px;
+  }
 }
 
 .dark {
@@ -116,13 +156,28 @@
 }
 
 @layer utilities {
-  .no-scrollbar::-webkit-scrollbar {
-    display: none;
+  ::-webkit-scrollbar {
+    width: 4px;
+    height: 6px;
   }
 
-  .no-scrollbar {
-    -ms-overflow-style: none;
-    scrollbar-width: none;
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: linear-gradient(180deg, var(--color-primary-500), var(--color-primary-900));
+    border-radius: 9999px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(180deg, var(--color-highlight-500), var(--color-highlight-900));
+  }
+
+  /* === For Firefox === */
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: var(--color-primary-500) transparent;
   }
 
   .global-px {
@@ -620,4 +675,36 @@
     line-height: 13px;
     font-style: normal;
   }
+}
+
+@keyframes slideNext {
+  0% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slidePrev {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.animate-slide-next {
+  animation: slideNext 0.7s ease-out;
+}
+
+.animate-slide-prev {
+  animation: slidePrev 0.7s ease-out;
 }

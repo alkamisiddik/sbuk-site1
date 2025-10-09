@@ -59,7 +59,7 @@ function NavigationMenuItem({
 }
 
 const navigationMenuTriggerStyle = cva(
-  "group inline-flex h-9 w-max items-center justify-center px-4 py-2 text-md font-medium bg-transparent text-white hover:bg-transparent hover:text-blue-400 disabled:pointer-events-none disabled:opacity-50 data-[state=open]:bg-transparent data-[state=open]:text-blue-400 focus:bg-transparent focus:text-blue-400 outline-none transition-colors duration-200"
+  "group inline-flex h-[26px] w-max items-center justify-center py-[17px] bg-transparent text-white hover:bg-transparent disabled:pointer-events-none disabled:opacity-50 data-[state=open]:bg-transparent focus:bg-transparent outline-none transition-colors duration-200"
 )
 
 function NavigationMenuTrigger({
@@ -70,17 +70,20 @@ function NavigationMenuTrigger({
   return (
     <NavigationMenuPrimitive.Trigger
       data-slot="navigation-menu-trigger"
-      className={cn(navigationMenuTriggerStyle(), "group", className)}
+      className={cn(navigationMenuTriggerStyle(), "group relative", className)}
       {...props}
     >
       {children}{" "}
+      {/* Show indicator on hover OR when menu is open */}
+      <span className="absolute w-full h-1 rounded-b-4xl bg-highlight-500 -bottom-8 left-0 scale-y-0 origin-top transition-transform duration-300 hover:scale-y-100 group-data-[state=open]:scale-y-100 z-100"></span>
       <ChevronDownIcon
-        className="relative top-[1px] ml-1 size-3 transition duration-300 group-data-[state=open]:rotate-180"
+        className="relative ml-2 size-3 text-white transition duration-300 group-data-[state=open]:rotate-180"
         aria-hidden="true"
       />
     </NavigationMenuPrimitive.Trigger>
   )
 }
+
 
 function NavigationMenuContent({
   className,
@@ -89,15 +92,35 @@ function NavigationMenuContent({
   return (
     <NavigationMenuPrimitive.Content
       data-slot="navigation-menu-content"
+      // ✅ Use fixed positioning instead of relative-to-trigger
       className={cn(
-        "absolute -translate-x-1/2 top-full data-[motion^=from-]:animate-in data-[motion^=to-]:animate-out data-[motion^=from-]:fade-in data-[motion^=to-]:fade-out data-[motion=from-end]:slide-in-from-right-52 data-[motion=from-start]:slide-in-from-left-52 data-[motion=to-end]:slide-out-to-right-52 data-[motion=to-start]:slide-out-to-left-52 w-[80vw] z-50",
-        "bg-[#0B1840] text-white p-4 mt-2 rounded-lg shadow-lg border border-gray-700",
+        // Base positioning
+        "fixed left-1/2 -translate-x-1/2 translate-y-[20px] w-[calc(100vw-2*var(--global-px))] z-50",
+
+        // Add smooth transitions
+        "animate-in duration-300 ease-out",
+
+        // Motion-based animations
+        "data-[motion^=from-]:animate-in data-[motion^=to-]:animate-out " +
+        "data-[motion^=from-]:fade-in data-[motion^=to-]:fade-out " +
+        // "data-[motion=from-end]:slide-in-from-right-52 " +
+        // "data-[motion=from-start]:slide-in-from-left-52 " +
+        // "data-[motion=to-end]:slide-out-to-right-52 " +
+        // "data-[motion=to-start]:slide-out-to-left-52",
+
+        // Background & border styling
+        "bg-primary/30 backdrop-blur-md border border-white/30",
+
+        // Text and shadow
+        "text-white p-10 mt-2 shadow-xl",
+
         className
       )}
       {...props}
     />
   )
 }
+
 
 function NavigationMenuViewport({
   className,

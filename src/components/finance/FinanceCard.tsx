@@ -47,16 +47,16 @@ function FinanceCard({ project }) {
                     opacity: isHovered ? 1 : 0,
                     y: isHovered ? 0 : "100%",
                 }}
-                transition={{ duration: 0.8, ease: "easeOut" }}
+                transition={{ duration: 0.5, ease: "easeOut" }}
                 className="absolute inset-0 flex flex-col px-8 pt-8 gap-4 bg-gradient-to-t from-[#000000] from-0%"
             >
                 <h4 className="text-white text-[22px] font-medium font-family-helvetica leading-[120%] mb-4">
                     {project.title}
                 </h4>
                 <p className="text-white font-family-helvetica font-normal text-md leading-[160%] pb-4">{project.hoverPara}</p>
-                <Button className="h-13 w-[134px] rounded-xs px-4 py-3 bg-secondary-500 text-white hover:bg-transparent/40 hover:border hover:border-secondary-500 hover:text-secondary-500 group">See More
-                    <ArrowUpRight className="w-6 h-6 group-hover:hidden" />
-                    <ArrowRight className="w-6 h-6 hidden group-hover:inline" />
+                <Button className="h-13 w-[147px] rounded-xs px-4 py-3 bg-secondary-500 text-white hover:bg-transparent/40 hover:border hover:border-secondary-500 hover:text-secondary-500 group">See More
+                    <ArrowUpRight className="w-[32px] h-[32px] group-hover:hidden" />
+                    <ArrowRight className="w-[32px] h-[32px] hidden group-hover:inline" />
                 </Button>
             </motion.div>
         </motion.div>

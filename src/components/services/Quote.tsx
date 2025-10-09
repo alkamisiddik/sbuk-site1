@@ -17,27 +17,27 @@ export function AnimatedQuote({ imageSrc, imageAlt }: AnimatedQuote) {
             onMouseLeave={() => setIsHovered(false)}
             className="relative w-full overflow-hidden"
         >
-            <div className="flex flex-col md:flex-row items-center gap-14">
+            <div className="flex flex-col md:flex-row items-center gap-13">
                 {/* Image Section - Animates from left */}
                 <div
                     className={`relative flex-shrink-0 overflow-hidden transition-all duration-700 ease-out ${isHovered ? "translate-x-0 opacity-100" : "-translate-x-[100vw] opacity-0"}`}
                 >
-                    <div className="relative w-[340px] h-[518px]">
+                    <div className="relative w-[340px] h-[518px] pt-[25px]">
                         <Image src={imageSrc || "/placeholder.svg"} alt={imageAlt} fill className="object-cover rounded-2xl" />
                     </div>
                 </div>
 
                 {/* Text Section - Animates from right */}
                 <div
-                    className={`flex relative self-center flex-col items-start justify-center gap-5 ml-4 mb-[2.0px] transform transition-all duration-700 ease-out ${isHovered ? "translate-x-0 opacity-100" : "translate-x-full opacity-0"
+                    className={`bg-white flex relative self-center flex-col items-start justify-center gap-5 ml-4 mb-[2.0px] transform transition-all duration-700 ease-out ${isHovered ? "translate-x-0 opacity-100" : "translate-x-full opacity-0"
                         }`}
                 >
                     {/* Opening quotation mark */}
-                    <p className="font-extralight text-gray-900 font-family-helvetica text-5xl leading-[131%] relative">
-                        <span className="relative inline-block align-top mr-3">
+                    <p className="font-light text-black text-5xl leading-[131%] relative">
+                        <span className="relative inline-block align-text-top mr-3">
                             <svg
-                                width="32"
-                                height="24"
+                                width="38.34"
+                                height="38.34"
                                 viewBox="0 0 39 29"
                                 fill="none"
                                 xmlns="http://www.w3.org/2000/svg"
@@ -48,13 +48,13 @@ export function AnimatedQuote({ imageSrc, imageAlt }: AnimatedQuote) {
                             </svg>
                         </span>
 
-                        At <span className="font-bold text-secondary-500">SBUK</span>, we believe banking is more than transactions,
-                        it’s about building trust, empowering businesses, and creating opportunities that shape a better future for all.
+                        At <span className="font-medium text-secondary-500">SBUK</span>, we believe banking is more than transactions,
+                        it's about building trust, empowering businesses, and creating opportunities that shape a better future for all.
 
-                        <span className="relative inline-block align-baseline ml-3">
+                        <span className="relative inline-block align-text-top ml-3">
                             <svg
-                                width="32"
-                                height="24"
+                                width="38.34"
+                                height="38.34"
                                 viewBox="0 0 39 29"
                                 fill="none"
                                 xmlns="http://www.w3.org/2000/svg"
@@ -66,7 +66,7 @@ export function AnimatedQuote({ imageSrc, imageAlt }: AnimatedQuote) {
                         </span>
                     </p>
 
-                    <p className="relative w-fit [font-family:'Helvetica_Neue-Medium',Helvetica] font-medium text-black text-base tracking-[0] leading-[25.6px] whitespace-nowrap pl-12">
+                    <p className="relative w-fit font-family-helvetica font-medium text-black text-base tracking-[0] leading-[160%] whitespace-nowrap pt-5 uppercase">
                         —&nbsp;&nbsp;MR MASUM BILLAH, CEO AT SBUK
                     </p>
                 </div>

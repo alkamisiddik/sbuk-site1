@@ -1,8 +1,5 @@
 import { ArrowRight, ArrowUpRight } from "lucide-react"
 import { Button } from "@/components/ui/button"
-import Image from "next/image"
-import { useState } from "react"
-import { motion } from "framer-motion"
 import FinanceCard from "./FinanceCard"
 
 const projects = [

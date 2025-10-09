@@ -1,14 +1,13 @@
 'use client';
 
-import KeyServices from "@/components/keyServices/KeyService";
-import Carousel from "@/components/home/Carousel";
-import MiddleComponent from "@/components/home/MiddleComponent";
-import AboutUs from "@/components/about/AboutUs";
-import ServiceList from "@/components/services/ServiceList";
-import Finance from "@/components/finance/Finance";
-import Feedback from "@/components/customerFeedback/feedback";
-import Announcements from "@/components/announcement/Announcement";
-import ContactPage from "@/components/contact/Contact";
+import KeyServices from "@/components/keyServices";
+import { Carousel, MiddleComponent } from "@/components/home";
+import ServiceList from "@/components/services";
+import { AboutUs } from "@/components/about";
+import { Finance } from "@/components/finance";
+import { Feedback } from "@/components/customerFeedback";
+import { Announcement } from "@/components/announcement";
+import { Contact } from "@/components/contact";
 
 export default function Home() {
 
@@ -22,8 +21,8 @@ export default function Home() {
       <ServiceList />
       <Finance />
       <Feedback />
-      <Announcements />
-      <ContactPage />
+      <Announcement />
+      <Contact />
     </>
   );
 }

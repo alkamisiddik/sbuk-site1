@@ -109,22 +109,20 @@ const cards = [
 const KeyServices = () => {
     const [active, setActive] = useState<number | null>(null)
     return (
-        <div className="relative w-full min-h-screen lg:py-20 px-4 lg:px-8">
-            <div className='max-w-[88%] mx-auto mt-20'>
-                <div className="flex justify-between">
-                    <div className='font-bold text-5xl leading-[132%]'>Key Services</div>
-                    <div className='w-1/3 text-justify font-normal text-base'>At Sikapuduo Bank, we're redefining the way you bank. With cutting-edge technology, innovative solutions, and a customer-centric approach, we're transforming the banking experience for the modern world.</div>
-                </div>
-                <div className="flex w-full gap-6 mx-auto mt-12">
-                    {cards.map((card) => (
-                        <ExpandableCard
-                            key={card.id}
-                            {...card}
-                            active={active}
-                            setActive={setActive}
-                        />
-                    ))}
-                </div>
+        <div className="relative w-full global-px my-[68px]">
+            <div className="flex justify-between">
+                <div className='font-bold text-5xl leading-[132%]'>Key Services</div>
+                <div className='w-[550px] text-justify font-normal text-base'>At Sonali Bangladesh (UK) Limited, we're redefining the way you bank. With cutting-edge technology, innovative solutions, and a customer-centric approach, we're transforming the banking experience for the modern world.</div>
+            </div>
+            <div className="flex w-full gap-6 mx-auto pt-12">
+                {cards.map((card) => (
+                    <ExpandableCard
+                        key={card.id}
+                        {...card}
+                        active={active}
+                        setActive={setActive}
+                    />
+                ))}
             </div>
         </div>
     )
