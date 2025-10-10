@@ -59,7 +59,7 @@ function NavigationMenuItem({
 }
 
 const navigationMenuTriggerStyle = cva(
-  "group inline-flex h-[26px] w-max items-center justify-center py-[17px] bg-transparent text-white hover:bg-transparent disabled:pointer-events-none disabled:opacity-50 data-[state=open]:bg-transparent focus:bg-transparent outline-none transition-colors duration-200"
+  "group inline-flex h-[26px] font-family-helvetica text-[16px] leading-[160%] font-normal w-max items-center justify-center py-[17px] bg-transparent text-white hover:bg-transparent disabled:pointer-events-none disabled:opacity-50 data-[state=open]:bg-transparent focus:bg-transparent outline-none transition-colors duration-200"
 )
 
 function NavigationMenuTrigger({

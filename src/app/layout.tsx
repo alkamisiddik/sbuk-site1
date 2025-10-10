@@ -35,12 +35,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
+      <body cz-shortcut-listen="true"
         className={`${inter.className} ${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <SbukHeader />
         {children}
-        <SbukFooter />
+        {/* <SbukFooter /> */}
       </body>
     </html>
   );

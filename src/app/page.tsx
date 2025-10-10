@@ -17,12 +17,12 @@ export default function Home() {
       <Carousel />
       <MiddleComponent />
       <KeyServices />
-      <AboutUs />
-      <ServiceList />
-      <Finance />
-      <Feedback />
-      <Announcement />
-      <Contact />
+      {/* <AboutUs /> */}
+      {/* <ServiceList /> */}
+      {/* <Finance /> */}
+      {/* <Feedback /> */}
+      {/* <Announcement /> */}
+      {/* <Contact /> */}
     </>
   );
 }

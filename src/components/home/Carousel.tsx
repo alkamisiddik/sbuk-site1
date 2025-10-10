@@ -18,9 +18,9 @@ export default function Carousel() {
     }, []);
 
     return (
-        <div className="relative w-full h-[50vh] sm:h-[60vh] md:h-[70vh] lg:h-[80vh] xl:h-dvh -mt-[var(--header-Height)]">
+        <div className="relative w-full h-dvh -mt-[var(--header-Height)]">
             {/* Slides */}
-            <AnimatePresence mode="wait">
+            <AnimatePresence>
                 <motion.div
                     key={slides[currentSlide].id}
                     initial={{ opacity: 0 }}
@@ -33,25 +33,22 @@ export default function Carousel() {
                     <img
                         src={slides[currentSlide].src}
                         alt={slides[currentSlide].alt}
-                        className="w-full h-full object-cover object-center"
+                        className="w-full h-full object-cover"
                     />
-                    {/* Gradient overlay - responsive opacity and direction */}
-                    <div className="absolute inset-0 bg-gradient-to-r from-[#21409AD6] from-0% to-[84%] md:from-[#21409AD6] md:to-[84%]" />
+                    {/* Gradient overlay */}
+                    <div className="absolute inset-0 bg-gradient-to-r from-[#21409AD6] from-0% to-[84%]" />
                 </motion.div>
             </AnimatePresence>
 
-            {/* Navigation dots (bottom center) */}
-            <div className="absolute bottom-4 sm:bottom-6 md:bottom-8 lg:bottom-[35.39px] left-1/2 -translate-x-1/2 flex flex-row gap-2 z-10">
+
+            {/* Navigation dots (right middle) */}
+            <div className="absolute bottom-[35.39px] left-1/2 -translate-x-1/2 flex flex-row gap-2">
                 {slides.map((_, index) => (
                     <button
                         key={index}
                         onClick={() => setCurrentSlide(index)}
-                        aria-label={`Go to slide ${index + 1}`}
-                        className={`w-3 h-3 sm:w-4 sm:h-4 rounded-full transition-all duration-300 ${
-                            index === currentSlide 
-                                ? "bg-secondary-500 scale-110" 
-                                : "bg-transparent border border-secondary-500 hover:bg-secondary-500/30"
-                        }`}
+                        className={`w-4 h-4 rounded-full transition-opacity ${index === currentSlide ? "bg-secondary-500" : "bg-transparent border border-secondary-500"
+                            }`}
                     />
                 ))}
             </div>
