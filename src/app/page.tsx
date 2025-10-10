@@ -17,7 +17,7 @@ export default function Home() {
       <Carousel />
       <MiddleComponent />
       <KeyServices />
-      {/* <AboutUs /> */}
+      <AboutUs />
       {/* <ServiceList /> */}
       {/* <Finance /> */}
       {/* <Feedback /> */}
