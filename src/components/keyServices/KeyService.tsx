@@ -116,9 +116,9 @@ const cards = [
 
 const KeyServices = () => {
   const [active, setActive] = useState<number | null>(null)
-  
+
   return (
-    <div className="relative w-full global-px my-[68px]">
+    <div className="relative w-full global-px py-[68px]">
       <div className="flex flex-col lg:flex-row lg:justify-between gap-6 lg:gap-0">
         <div className="font-bold text-3xl md:text-4xl lg:text-5xl leading-[132%]">Key Services</div>
         <div className="w-full lg:w-[550px] text-justify font-normal text-sm md:text-base">
@@ -126,7 +126,7 @@ const KeyServices = () => {
           solutions, and a customer-centric approach, we're transforming the banking experience for the modern world.
         </div>
       </div>
-      <div className="flex flex-col lg:flex-row w-full gap-6 mx-auto pt-8 lg:pt-12">
+      <div className="flex flex-col lg:flex-row w-full gap-6 mx-auto pt-8 lg:pt-12 pb-2">
         {cards.map((card) => (
           <ExpandableCard key={card.id} {...card} active={active} setActive={setActive} />
         ))}

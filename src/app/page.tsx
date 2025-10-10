@@ -18,8 +18,8 @@ export default function Home() {
       <MiddleComponent />
       <KeyServices />
       <AboutUs />
-      {/* <ServiceList /> */}
-      {/* <Finance /> */}
+      <ServiceList />
+      <Finance />
       {/* <Feedback /> */}
       {/* <Announcement /> */}
       {/* <Contact /> */}

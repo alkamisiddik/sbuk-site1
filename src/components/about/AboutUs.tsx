@@ -2,7 +2,7 @@ import { ArrowRight, ArrowUpRight } from "lucide-react"
 
 const AboutUs = () => {
     return (
-        <div className="relative w-full min-h-screen global-px mt-12 sm:mt-20 lg:mt-28">
+        <div className="relative w-full min-h-screen global-px mt-0 sm:mt-10 lg:mt-28">
             <div className="flex flex-col lg:flex-row lg:justify-between gap-8 sm:gap-10 lg:gap-12">
                 {/* Left Side */}
                 <div className="leftSide w-full lg:w-[900px] py-6 sm:py-10 lg:py-[55px]">
@@ -28,6 +28,7 @@ const AboutUs = () => {
                         scrambled it to make a type specimen book.
                     </p>
 
+
                     <button
                         className="mt-8 sm:mt-12 lg:mt-16 inline-flex items-center px-4 py-3 gap-2
                             bg-secondary-500 hover:bg-transparent 
@@ -39,10 +40,11 @@ const AboutUs = () => {
                         <ArrowUpRight className="w-5 h-5 sm:w-6 sm:h-6 group-hover:hidden" />
                         <ArrowRight className="w-5 h-5 sm:w-6 sm:h-6 hidden group-hover:inline" />
                     </button>
+
                 </div>
 
                 {/* Right Side */}
-                <div className="rightSide w-full lg:w-[734px]">
+                <div className="rightSide md:order-3 w-full lg:w-[734px]">
                     <div className="flex flex-row gap-4 sm:gap-5 lg:gap-7">
                         <div className="overflow-hidden rounded-lg flex-[1.77]">
                             <img

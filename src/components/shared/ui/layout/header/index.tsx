@@ -191,7 +191,7 @@ export function SbukHeader() {
 
             {/* Mobile menu */}
             {mobileMenuOpen && (
-                <div className="lg:hidden bg-primary-500 border-t border-white/20">
+                <div className="lg:hidden bg-primary-500 border-t border-white/20 z-999">
                     <nav className="global-px py-4 space-y-4 max-h-[calc(100vh-var(--header-Height))] overflow-y-auto">
                         {menuItems.map((item, index) => (
                             <div key={index} className="border-b border-white/10 last:border-b-0">

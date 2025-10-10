@@ -26,13 +26,13 @@ const projects = [
 export default function Finance() {
   return (
     <div className="w-full global-px pt-28">
-      <div className="max-h-[910px] w-full bg-primary-500 rounded-[20px] pl-[46px] pr-16 pt-[65.61px]">
+      <div className="max-h-[910px] w-full bg-primary-500 rounded-[20px] p-4 md:pl-[46px] md:pr-16 pt-10 md:pt-[65.61px]">
         {/* Header */}
-        <header className="flex items-center justify-between mb-[77px]">
-          <div className="w-[752px] py-[13px]">
-            <h1 className="font-family-helvetica text-white text-5xl font-medium leading-[124%]">It has never been easier to manage your finances</h1>
+        <header className="flex flex-col md:flex-row items-center justify-between mb-[77px]">
+          <div className="w-full md:w-[752px] md:py-[13px]">
+            <h1 className="font-family-helvetica text-white text-2xl md:text-5xl font-medium leading-[124%]">It has never been easier to manage your finances</h1>
           </div>
-          <div className="w-[510px]">
+          <div className="w-full md:w-[510px]">
             <p className="text-title1-regular leading-[160%] text-white font-family-helvetica">The most transparent and secured bank The most transparent and secured bank The most transparent and secured bank The most transparent and secured bank</p>
             <Button className="h-13 w-[147px] bg-secondary-500 text-white rounded-xs gap-2 mt-4 px-6 py-3 text-base font-medium hover:bg-[#AB782B29] hover:border hover:border-secondary-500 hover:text-secondary-500 group group">
               Get Started

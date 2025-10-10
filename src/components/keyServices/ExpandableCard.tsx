@@ -4,6 +4,7 @@ import { motion, AnimatePresence } from "framer-motion"
 import { ArrowRight, ArrowUpRight, Minus, Plus } from "lucide-react"
 import { Card, CardContent, CardHeader, CardTitle } from "../ui/card"
 import { Button } from "../ui/button"
+import { useEffect, useState } from "react"
 
 interface BoxDetail {
   boxTitle: string
@@ -32,13 +33,24 @@ export default function ExpandableCard({
 }: ExpandableCardProps) {
   const isActive = active === id
 
+  const [width, setWidth] = useState(0);
+
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      setWidth(window.innerWidth);
+      const handleResize = () => setWidth(window.innerWidth);
+      window.addEventListener('resize', handleResize);
+      return () => window.removeEventListener('resize', handleResize);
+    }
+  }, []);
+
   return (
     <motion.div
       layout
       transition={{ type: "spring", stiffness: 300, damping: 30 }}
       className={`relative rounded-md shadow-md overflow-hidden cursor-pointer flex h-[400px] md:h-[500px] lg:h-[600px]`}
       style={{
-        flex: window.innerWidth < 1024 ? "1 1 100%" : isActive ? 5 : 1,
+        flex: width < 1024 ? "1 1 100%" : isActive ? 5 : 1,
       }}
       onClick={() => setActive(isActive ? null : id)}
     >
@@ -54,7 +66,7 @@ export default function ExpandableCard({
           e.stopPropagation()
           setActive(isActive ? null : id)
         }}
-        className="absolute top-4 right-4 md:top-6 md:right-6 h-10 w-10 md:h-12 md:w-12 flex items-center justify-center rounded-[8px] bg-white/30 backdrop-blur-md z-10"
+        className="absolute top-4 right-4 md:top-6 md:right-6 h-10 w-10 md:h-12 md:w-12 flex items-center justify-center rounded-[8px] bg-white/30 backdrop-blur-md z-5"
       >
         {isActive ? (
           <Minus color="white" className="w-5 h-5 md:w-6 md:h-6" />

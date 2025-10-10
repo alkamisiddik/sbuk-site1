@@ -95,7 +95,7 @@ function NavigationMenuContent({
       // ✅ Use fixed positioning instead of relative-to-trigger
       className={cn(
         // Base positioning
-        "fixed left-1/2 -translate-x-1/2 translate-y-[20px] w-[calc(100vw-2*var(--global-px))] z-50",
+        "fixed left-1/2 -translate-x-1/2 translate-y-[20px] w-[calc(100vw-2*var(--global-px))]",
 
         // Add smooth transitions
         "animate-in duration-300 ease-out",
