@@ -112,7 +112,7 @@ export default function ExpandableCard({
                   </Card>
                 ))}
               </div>
-              <Button className="mt-4 lg:mt-6 h-10 w-30 p-3 text-sm md:text-base bg-amber-500 text-white hover:bg-transparent/40 hover:border hover:border-amber-500 hover:text-amber-500 group">
+              <Button className="mt-4 lg:mt-6 h-10 w-30 p-3 text-sm md:text-base bg-highlight-500 text-white hover:bg-transparent/40 hover:border hover:border-highlight-500 hover:text-highlight-500 group">
                 See More
                 <ArrowUpRight className="w-5 h-5 md:w-6 md:h-6 group-hover:hidden" />
                 <ArrowRight className="w-5 h-5 md:w-6 md:h-6 hidden group-hover:inline" />
