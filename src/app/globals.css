@@ -155,37 +155,6 @@
   --sidebar-ring: oklch(0.556 0 0);
 }
 
-@layer utilities {
-  ::-webkit-scrollbar {
-    width: 4px;
-    height: 6px;
-  }
-
-  ::-webkit-scrollbar-track {
-    background: transparent;
-  }
-
-  ::-webkit-scrollbar-thumb {
-    background: linear-gradient(180deg, var(--color-primary-500), var(--color-primary-900));
-    border-radius: 9999px;
-  }
-
-  ::-webkit-scrollbar-thumb:hover {
-    background: linear-gradient(180deg, var(--color-highlight-500), var(--color-highlight-900));
-  }
-
-  /* === For Firefox === */
-  * {
-    scrollbar-width: thin;
-    scrollbar-color: var(--color-primary-500) transparent;
-  }
-
-  .global-px {
-    padding-left: var(--global-px);
-    padding-right: var(--global-px);
-  }
-}
-
 
 @layer base {
   * {
@@ -193,10 +162,11 @@
   }
 
   html {
-    font-family: "Helvetica Neue", sans-serif;
+    font-family: var(--font-helvetica-neue), "Helvetica Neue", sans-serif;
   }
 
   body {
+    font-family: var(--font-helvetica-neue);
     @apply bg-background text-foreground;
   }
 }
@@ -282,12 +252,39 @@
   --color-danger-800: #832525;
 
   /* Font Family */
-  /* --font-family-primary: "Roboto", sans-serif; */
   --font-family-helvetica: "Helvetica Neue", sans-serif;
 }
 
 /* Custom Typography Utilities */
 @layer utilities {
+  ::-webkit-scrollbar {
+    width: 4px;
+    height: 6px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: linear-gradient(180deg, var(--color-primary-500), var(--color-primary-900));
+    border-radius: 9999px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(180deg, var(--color-highlight-500), var(--color-highlight-900));
+  }
+
+  /* === For Firefox === */
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: var(--color-primary-500) transparent;
+  }
+
+  .global-px {
+    padding-left: var(--global-px);
+    padding-right: var(--global-px);
+  }
 
   /* H1 Variants */
   .text-h1-black {
@@ -677,25 +674,26 @@
   }
 }
 
+/* Animations */
 @keyframes slideNext {
-  0% {
+  from {
     transform: translateX(100%);
     opacity: 0;
   }
 
-  100% {
+  to {
     transform: translateX(0);
     opacity: 1;
   }
 }
 
 @keyframes slidePrev {
-  0% {
+  from {
     transform: translateX(-100%);
     opacity: 0;
   }
 
-  100% {
+  to {
     transform: translateX(0);
     opacity: 1;
   }

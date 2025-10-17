@@ -8,15 +8,31 @@ import { SbukFooter } from "@/components/shared/ui/layout/footer";
 
 const helvetica_Neue = localFont({
   src: [
-    { path: "../fonts/helvetica-neue/HelveticaNeue-Thin.otf", weight: "100", style: "normal" },
-
-    { path: "../fonts/helvetica-neue/HelveticaNeue-Light.otf", weight: "300", style: "normal" },
-
-    { path: "../fonts/helvetica-neue/HelveticaNeue-Medium.otf", weight: "500", style: "normal" },
-
-    { path: "../fonts/helvetica-neue/HelveticaNeue-Bold.otf", weight: "700", style: "normal" },
-
-    { path: "../fonts/helvetica-neue/HelveticaNeue-Roman.otf", weight: "400", style: "normal" },
+    {
+      path: "../fonts/helvetica-neue/HelveticaNeue-Thin.otf",
+      weight: "100",
+      style: "normal"
+    },
+    {
+      path: "../fonts/helvetica-neue/HelveticaNeue-Light.otf",
+      weight: "300",
+      style: "normal"
+    },
+    {
+      path: "../fonts/helvetica-neue/HelveticaNeue-Roman.otf",
+      weight: "400",
+      style: "normal"
+    },
+    {
+      path: "../fonts/helvetica-neue/HelveticaNeue-Medium.otf",
+      weight: "500",
+      style: "normal"
+    },
+    {
+      path: "../fonts/helvetica-neue/HelveticaNeue-Bold.otf",
+      weight: "700",
+      style: "normal"
+    },
   ],
   variable: "--font-helvetica-neue",
 });
