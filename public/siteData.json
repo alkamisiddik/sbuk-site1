@@ -1,0 +1,826 @@
+{
+  "title": "SBUK - Site 1",
+  "description": "Landing page of SBUK",
+  "header": {
+    "site": {
+      "siteTitle": "Sonali Bangladesh (UK) Limited",
+      "siteLogo": "/images/logo_footer.png",
+      "logoAlt": "Sonali Bangladesh (UK) Limited"
+    },
+    "menuItems": [
+      {
+        "title": "Products & Services details",
+        "contents": [
+          {
+            "contentTitle": "Who We Serve",
+            "contentItems": [
+              {
+                "name": "Large Corporates",
+                "href": ""
+              },
+              {
+                "name": "Governments",
+                "href": ""
+              },
+              {
+                "name": "Financial Institutions",
+                "href": ""
+              },
+              {
+                "name": "Other Clients",
+                "href": ""
+              }
+            ]
+          },
+          {
+            "contentTitle": "Key Services",
+            "contentItems": [
+              {
+                "name": "Trade & Project Financing",
+                "href": ""
+              },
+              {
+                "name": "Export Development",
+                "href": ""
+              },
+              {
+                "name": "Guarantees",
+                "href": ""
+              },
+              {
+                "name": "Trade Information & Advisory",
+                "href": ""
+              }
+            ]
+          },
+          {
+            "contentTitle": "Additional Services",
+            "contentItems": [
+              {
+                "name": "Supply Chain Financing Programs",
+                "href": ""
+              },
+              {
+                "name": "SME Financing Program",
+                "href": ""
+              },
+              {
+                "name": "Guarantees",
+                "href": ""
+              },
+              {
+                "name": "Credit Insurance Offerings",
+                "href": ""
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Knowledge & Research",
+        "contents": [
+          {
+            "contentTitle": "Knowledge & Research",
+            "contentItems": [
+              {
+                "name": "Research & Statistics",
+                "href": ""
+              },
+              {
+                "name": "Trade Policy and Market Access",
+                "href": ""
+              },
+              {
+                "name": "Trade Intelligence Solutions",
+                "href": ""
+              },
+              {
+                "name": "Publications (Journals, Papers, Newsletters)",
+                "href": ""
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Company",
+        "contents": [
+          {
+            "contentTitle": "About Us",
+            "contentItems": [
+              {
+                "name": "Vission & Mission",
+                "href": ""
+              },
+              {
+                "name": "Our Strategy",
+                "href": ""
+              },
+              {
+                "name": "Organizational Structure",
+                "href": ""
+              },
+              {
+                "name": "Board of Directors",
+                "href": ""
+              },
+              {
+                "name": "Management Team",
+                "href": ""
+              },
+              {
+                "name": "Corporate Governance",
+                "href": ""
+              },
+              {
+                "name": "Contact Us",
+                "href": ""
+              }
+            ]
+          },
+          {
+            "contentTitle": "Career",
+            "contentItems": [
+              {
+                "name": "Job Vacancies",
+                "href": ""
+              },
+              {
+                "name": "Internship Opportunities",
+                "href": ""
+              },
+              {
+                "name": "Employee Value Proposition",
+                "href": ""
+              },
+              {
+                "name": "Board Of Directors",
+                "href": ""
+              },
+              {
+                "name": "Management Team",
+                "href": ""
+              },
+              {
+                "name": "Corporate Governance",
+                "href": ""
+              }
+            ]
+          },
+          {
+            "contentTitle": "News",
+            "contentItems": [
+              {
+                "name": "Events (Upcoming and Past)",
+                "href": ""
+              },
+              {
+                "name": "Press Releases",
+                "href": ""
+              },
+              {
+                "name": "Insights",
+                "href": ""
+              },
+              {
+                "name": "Management Team",
+                "href": ""
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Investors",
+        "contents": [
+          {
+            "contentTitle": "Investors",
+            "contentItems": [
+              {
+                "name": "Financial Information",
+                "href": ""
+              },
+              {
+                "name": "Credit Ratings Reports",
+                "href": ""
+              },
+              {
+                "name": "FAQs",
+                "href": ""
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "carousel": [
+    {
+      "id": 1,
+      "src": "/images/home1.png",
+      "alt": "Home 1"
+    },
+    {
+      "id": 2,
+      "src": "/images/home2.png",
+      "alt": "Home 2"
+    },
+    {
+      "id": 3,
+      "src": "/images/home3.png",
+      "alt": "Home 3"
+    }
+  ],
+  "middleComponent": {
+    "title": "Effortless Global",
+    "highlight": "Trade Funding",
+    "text": "Our solutions help UK businesses trade confidently with flexible, risk-managed finance. Whether you buy or sell overseas, we're here to help to support every step",
+    "buttonText": "Explore Trade Finance"
+  },
+  "keyServices": {
+    "title": "Key Services",
+    "text": "At Sonali Bangladesh (UK) Limited, we're redefining the way you bank. With cutting-edge technology, innovative solutions, and a customer-centric approach, we're transforming the banking experience for the modern world.",
+    "cards": [
+      {
+        "id": 1,
+        "title": "Trade & Project Financing",
+        "image": "/images/keyService1.jpg",
+        "details": "We specialize in assisting businesses in obtaining the necessary capital to successfully undertake large-scale trade and infrastructure projects. Our goal is to ensure that these ventures are executed with maximum efficiency and effectiveness, enabling companies to thrive in a competitive market. By leveraging our expertise and resources, we help organizations navigate the complexities of financing, allowing them to focus on their core operations and achieve their strategic objectives.",
+        "buttonText": "See More",
+        "boxDetails": [
+          {
+            "boxTitle": "Trade Financing",
+            "boxDescription": "Enabling smooth international and domestic trade.",
+            "listData": [
+              {
+                "id": 1,
+                "text": "Letter of Credit"
+              },
+              {
+                "id": 2,
+                "text": "Bill Discounting"
+              },
+              {
+                "id": 3,
+                "text": "Export Financing"
+              }
+            ]
+          },
+          {
+            "boxTitle": "Project Financing",
+            "boxDescription": "Helping businesses bring big ideas to life.",
+            "listData": [
+              {
+                "id": 1,
+                "text": "Infrastructure Projects"
+              },
+              {
+                "id": 2,
+                "text": "Public-Private Partnerships"
+              },
+              {
+                "id": 3,
+                "text": "Long-Term Financing"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "title": "Export Development",
+        "image": "/images/keyService2.jpg",
+        "details": "We empower businesses to expand into international markets with comprehensive export development solutions. From market research to financial support, we provide the tools, strategies, and guidance needed to make your exports successful and sustainable.",
+        "buttonText": "See More",
+        "boxDetails": [
+          {
+            "boxTitle": "Export Readiness & Strategy",
+            "boxDescription": "Laying the foundation for global success.",
+            "listData": [
+              {
+                "id": 1,
+                "text": "Market Assessment"
+              },
+              {
+                "id": 2,
+                "text": "Business Readiness Check"
+              },
+              {
+                "id": 3,
+                "text": "Strategic Planning"
+              }
+            ]
+          },
+          {
+            "boxTitle": "Export Financing & Support",
+            "boxDescription": "Ensuring smooth financial operations for exporters.",
+            "listData": [
+              {
+                "id": 1,
+                "text": "Pre-Shipment Finance"
+              },
+              {
+                "id": 2,
+                "text": "Post-Shipment Finance"
+              },
+              {
+                "id": 3,
+                "text": "Export Credit Insurance"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "title": "Guarantees",
+        "image": "/images/keyService3.jpg",
+        "details": "We provide a wide range of guarantee solutions designed to build trust, reduce financial risk, and ensure the smooth execution of trade and project commitments. Our guarantees serve as strong financial backing, giving businesses and their partners the confidence to move forward with security and assurance.",
+        "buttonText": "See More",
+        "boxDetails": [
+          {
+            "boxTitle": "Types of Guarantees",
+            "boxDescription": "Providing assurance for every stage of business operations.",
+            "listData": [
+              {
+                "id": 1,
+                "text": "Performance Guarantee"
+              },
+              {
+                "id": 2,
+                "text": "Bid Bond Guarantee"
+              },
+              {
+                "id": 3,
+                "text": "Advance Payment Guarantee"
+              }
+            ]
+          },
+          {
+            "boxTitle": "Key Features",
+            "boxDescription": "",
+            "listData": [
+              {
+                "id": 1,
+                "text": "Backed by trusted institutions"
+              },
+              {
+                "id": 2,
+                "text": "Flexible terms"
+              },
+              {
+                "id": 3,
+                "text": "Fast issuance"
+              },
+              {
+                "id": 4,
+                "text": "Local & international coverage"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": 4,
+        "title": "Trade Information & Advisory",
+        "image": "/images/keyService4.jpg",
+        "details": "We provide businesses with expert advisory and up-to-date trade information to help them navigate complex markets, comply with regulations, and make informed decisions. Our advisory services are designed to reduce risks, identify opportunities, and support sustainable trade growth.",
+        "buttonText": "See More",
+        "boxDetails": [
+          {
+            "boxTitle": "Advisory Services",
+            "boxDescription": "Guiding businesses with reliable expertise.",
+            "listData": [
+              {
+                "id": 1,
+                "text": "Market Research & Analysis"
+              },
+              {
+                "id": 2,
+                "text": "Regulatory Advisory"
+              },
+              {
+                "id": 3,
+                "text": "Trade Policy Updates"
+              }
+            ]
+          },
+          {
+            "boxTitle": "Trade Information Support",
+            "boxDescription": "Timely access to accurate trade information.",
+            "listData": [
+              {
+                "id": 1,
+                "text": "Export & Import Data"
+              },
+              {
+                "id": 2,
+                "text": "Industry Reports"
+              },
+              {
+                "id": 3,
+                "text": "Trade Procedures Guide"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "aboutUs": {
+    "title": "About Us",
+    "finance": {
+      "main": "Innovating Finance for a Better Tomorrow.",
+      "highlight": "Empowering you",
+      "suffix": " with smarter, future-ready banking."
+    },
+    "para1": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
+    "para2": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+    "buttonText": "More About Us",
+    "aboutUsImages": [
+      {
+        "src": "/images/about1.png",
+        "alt": "About Us"
+      },
+      {
+        "src": "/images/about2.png",
+        "alt": "About Us"
+      },
+      {
+        "src": "/images/about3.png",
+        "alt": "About Us"
+      },
+      {
+        "src": "/images/about4.png",
+        "alt": "About Us"
+      }
+    ]
+  },
+  "serviceList": {
+    "services": [
+      {
+        "title": "WHO WE SERVE",
+        "items": [
+          {
+            "label": "Large Corporates",
+            "href": "/"
+          },
+          {
+            "label": "Governments",
+            "href": "/"
+          },
+          {
+            "label": "Financial Institutions",
+            "href": "/"
+          },
+          {
+            "label": "Other Clients",
+            "href": "/"
+          }
+        ]
+      },
+      {
+        "title": "ADDITIONAL SERVICES",
+        "items": [
+          {
+            "label": "Supply Chain Financing Solutions",
+            "href": "/",
+            "iconOffset": "mr-[-93px]"
+          },
+          {
+            "label": "SME Financing Programs",
+            "href": "/",
+            "iconOffset": "mr-[-34px]"
+          },
+          {
+            "label": "Credit Insurance Offerings",
+            "href": "/",
+            "iconOffset": "mr-[-40px]"
+          }
+        ]
+      },
+      {
+        "title": "INVESTORS",
+        "items": [
+          {
+            "label": "Financial Information",
+            "href": "/",
+            "iconOffset": "mr-[-2px]"
+          },
+          {
+            "label": "Credit Ratings Reports",
+            "href": "/credit-ratings-reports",
+            "iconOffset": "mr-[-15px]"
+          },
+          {
+            "label": "FAQs",
+            "href": "/"
+          }
+        ]
+      },
+      {
+        "title": "KNOWLEDGE & RESEARCH",
+        "items": [
+          {
+            "label": "Research & Statistics",
+            "href": "/",
+            "iconOffset": "mr-[-5px]"
+          },
+          {
+            "label": "Trade Policy and Market Access",
+            "href": "/",
+            "iconOffset": "mr-[-82px]"
+          },
+          {
+            "label": "Trade Intelligence Solutions",
+            "href": "/",
+            "iconOffset": "mr-[-49px]"
+          },
+          {
+            "label": "Publications (Journals, Papers, Newsletters)",
+            "href": "/",
+            "iconOffset": "mr-[-167px]"
+          }
+        ]
+      }
+    ],
+    "quote": {
+      "imgSrc": "/images/sbuk_md.jpg",
+      "imageAlt": "Portrait",
+      "start": "At",
+      "highlight": "SBUK",
+      "end": ", we believe banking is more than transactions, it's about building trust, empowering businesses, and creating opportunities that shape a better future for all.",
+      "title": "MR MASUM BILLAH, CEO AT SBUK"
+    }
+  },
+  "finances": {
+    "leftTitle": "It has never been easier to manage your finances",
+    "rightText": "The most transparent and secured bank The most transparent and secured bank The most transparent and secured bank The most transparent and secured bank",
+    "buttonText": "Get Started",
+    "financeCards": [
+      {
+        "title": "Individuals",
+        "subtitle": "The most transparent and secured bank of The most transparent and secured bank The most transparent and secured bank The most transparent and secured bank",
+        "hoverPara": "Welcome to Pinnacle Bank, where your financial security is our top priority! We leverage the latest technology to ensure your transactions are safe and secure. Our dedication to transparency and open communication fosters trust, making us the ideal partner for all your banking needs. Join us and discover a banking experience that puts you first, with a strong focus on your financial well-being. Here keeping your money safe is our top priority! We use the latest tech to make sure your transactions are secure. We believe in being open and honest, which helps us build trust with you. Come join us for a banking experience that puts you first and focuses on your financial well-being!",
+        "image": "/images/finance1.jpg",
+        "buttonText": "See More"
+      },
+      {
+        "title": "Startups",
+        "subtitle": "The most transparent and secured bank The most transparent and secured bank The most transparent and secured bank The most transparent and secured bank",
+        "hoverPara": "Welcome to Pinnacle Bank, where your financial security is our top priority! We leverage the latest technology to ensure your transactions are safe and secure. Our dedication to transparency and open communication fosters trust, making us the ideal partner for all your banking needs. Join us and discover a banking experience that puts you first, with a strong focus on your financial well-being. Here keeping your money safe is our top priority! We use the latest tech to make sure your transactions are secure. We believe in being open and honest, which helps us build trust with you. Come join us for a banking experience that puts you first and focuses on your financial well-being!",
+        "image": "/images/finance2.jpg",
+        "buttonText": "See More"
+      },
+      {
+        "title": "Enterprises",
+        "subtitle": "The most transparent and secured bank The most transparent and secured bank The most transparent and secured bank The most transparent and secured bank",
+        "hoverPara": "Welcome to Pinnacle Bank, where your financial security is our top priority! We leverage the latest technology to ensure your transactions are safe and secure. Our dedication to transparency and open communication fosters trust, making us the ideal partner for all your banking needs. Join us and discover a banking experience that puts you first, with a strong focus on your financial well-being. Here keeping your money safe is our top priority! We use the latest tech to make sure your transactions are secure. We believe in being open and honest, which helps us build trust with you. Come join us for a banking experience that puts you first and focuses on your financial well-being!",
+        "image": "/images/finance3.jpg",
+        "buttonText": "See More"
+      }
+    ]
+  },
+  "feedbacks": [
+    {
+      "feedback": "I signed up in minutes, and now I can manage everything from my phone. No hidden fees, no stress—just pure convenience!",
+      "image": "/images/customer1.png",
+      "name": "Aulia Morgan.",
+      "title": "Officer"
+    },
+    {
+      "feedback": "As someone new to digital banking, I love how simple and transparent the services are. Plus, the rewards are a great bonus!",
+      "image": "/images/customer2.png",
+      "name": "Daniel K",
+      "title": "Small Business Owner"
+    },
+    {
+      "feedback": "From quick money transfers to round-the-clock support, this bank has everything I need. I feel safe and in control.",
+      "image": "/images/customer3.png",
+      "name": "Carlos H",
+      "title": "Travel Blogger"
+    },
+    {
+      "feedback": "I signed up in minutes, and now I can manage everything from my phone. No hidden fees, no stress—just pure convenience!",
+      "image": "/images/customer4.png",
+      "name": "Theresa Webb",
+      "title": "Officer"
+    },
+    {
+      "feedback": "As someone new to digital banking, I love how simple and transparent the services are. Plus, the rewards are a great bonus!",
+      "image": "/images/customer5.png",
+      "name": "Kristin Watson",
+      "title": "Travel Blogger"
+    },
+    {
+      "feedback": "From quick money transfers to round-the-clock support, this bank has everything I need. I feel safe and in control.",
+      "image": "/images/customer6.png",
+      "name": "Darrell Steward",
+      "title": "Small Business Owner"
+    }
+  ],
+  "announcementData": {
+    "title": "Announcements",
+    "announcements": [
+      {
+        "id": 1,
+        "image": "/images/announcement1.jpg",
+        "title": "Lorem Ipsum is simply dummy text",
+        "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+        "hoverPara": [
+          "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions.",
+          "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose."
+        ],
+        "buttonText": ""
+      },
+      {
+        "id": 2,
+        "image": "/images/announcement2.png",
+        "title": "Lorem Ipsum is simply dummy text",
+        "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+        "hoverPara": [
+          "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions.",
+          "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose."
+        ]
+      },
+      {
+        "id": 3,
+        "image": "/images/announcement3.png",
+        "title": "Lorem Ipsum is simply dummy text",
+        "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+        "hoverPara": [
+          "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions.",
+          "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose."
+        ]
+      },
+      {
+        "id": 4,
+        "image": "/images/announcement1.jpg",
+        "title": "Id 4 - Lorem Ipsum is simply dummy",
+        "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+        "hoverPara": [
+          "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions.",
+          "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose."
+        ]
+      },
+      {
+        "id": 5,
+        "image": "/images/announcement2.png",
+        "title": "Id 5 - Lorem Ipsum is simply dummy",
+        "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+        "hoverPara": [
+          "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions.",
+          "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose."
+        ]
+      },
+      {
+        "id": 6,
+        "image": "/images/announcement3.png",
+        "title": "Id 6 - Lorem Ipsum is simply dummy",
+        "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+        "hoverPara": [
+          "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions.",
+          "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose."
+        ]
+      }
+    ]
+  },
+  "contactData": {
+    "videoSrc": "/SBUK G 3.mp4",
+    "title": "Let’s get the conversation going",
+    "para1": " Learn more about how FIS can help you run, grow, protect and connect your business with unparalleled confidence.",
+    "boxData": [
+      {
+        "title": "How We Can Help",
+        "listData": [
+          {
+            "data": "Service inquiries and consultations"
+          },
+          {
+            "data": "Partnership opportunities"
+          },
+          {
+            "data": "Trade information and advisory support"
+          }
+        ]
+      },
+      {
+        "title": "Why Choose Us?",
+        "listData": [
+          {
+            "data": "Trusted partner for trade and project solutions"
+          },
+          {
+            "data": "Proven expertise in international markets"
+          },
+          {
+            "data": "Client-focused service approach"
+          }
+        ]
+      }
+    ]
+  },
+  "footer": {
+    "footerLogo": "/images/logo_footer.png",
+    "logoTitle": "Sonali Bangladesh (UK) Limited",
+    "logoAlt": "Sonali Bangladesh (UK) Limited",
+    "footerText": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled.",
+    "copywriteText": "© 2025 Sonali Bangladesh (UK) Limited. All Rights Reserved",
+    "socialLinks": {
+      "instagram": "#",
+      "facebook": "#",
+      "twitter": "#",
+      "linkedin": "#"
+    },
+    "footerItems": [
+      {
+        "title": "Key Services",
+        "items": [
+          {
+            "label": "Trade & Project Financing",
+            "href": "/services/trade-financing"
+          },
+          {
+            "label": "Export Development",
+            "href": "/services/export-development"
+          },
+          {
+            "label": "Guarantees",
+            "href": "/services/guarantees"
+          },
+          {
+            "label": "Trade Information & Advisory",
+            "href": "/services/trade-advisory"
+          }
+        ]
+      },
+      {
+        "title": "About Us",
+        "items": [
+          {
+            "label": "Vision & Mission",
+            "href": "/about/vision-mission"
+          },
+          {
+            "label": "Our Strategy",
+            "href": "/about/strategy"
+          },
+          {
+            "label": "Organizational Structure",
+            "href": "/about/structure"
+          },
+          {
+            "label": "Board of Directors",
+            "href": "/about/board"
+          },
+          {
+            "label": "Management Team",
+            "href": "/about/team"
+          },
+          {
+            "label": "Corporate Governance",
+            "href": "/about/governance"
+          }
+        ]
+      },
+      {
+        "title": "Media",
+        "items": [
+          {
+            "label": "News",
+            "href": "/media/news"
+          },
+          {
+            "label": "Events (Upcoming and Past)",
+            "href": "/media/events"
+          },
+          {
+            "label": "Press Releases",
+            "href": "/media/press"
+          },
+          {
+            "label": "Insights",
+            "href": "/media/insights"
+          }
+        ]
+      },
+      {
+        "title": "Career",
+        "items": [
+          {
+            "label": "Job Vacancies",
+            "href": "/career/jobs"
+          },
+          {
+            "label": "Internship Opportunities",
+            "href": "/career/internships"
+          },
+          {
+            "label": "Employee Value Proposition",
+            "href": "/career/value-proposition"
+          }
+        ]
+      }
+    ]
+  }
+}
