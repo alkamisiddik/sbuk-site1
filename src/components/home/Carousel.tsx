@@ -1,7 +1,8 @@
-import { CarouselProps } from "@/lib/types";
+
 import { motion, AnimatePresence } from "motion/react";
 import Image from "next/image";
 import { useEffect, useState } from "react";
+import { CarouselProps } from "@/library/types"
 
 
 export default function Carousel({ slides }: CarouselProps) {

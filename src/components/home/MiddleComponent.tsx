@@ -1,6 +1,7 @@
-import { MiddleComponentProps } from '@/lib/types'
+
 import { ArrowRight, ArrowUpRight } from 'lucide-react'
 import React from 'react'
+import { MiddleComponentProps } from "@/library/types"
 
 export default function MiddleComponent({ middleComponent }: MiddleComponentProps) {
     return (

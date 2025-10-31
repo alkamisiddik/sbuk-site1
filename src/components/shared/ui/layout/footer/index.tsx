@@ -1,4 +1,4 @@
-import { FooterProps } from "@/lib/types";
+import { FooterProps } from "@/library/types";
 import {
     Facebook,
     Twitter,

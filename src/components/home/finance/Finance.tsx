@@ -1,7 +1,7 @@
 import { ArrowRight, ArrowUpRight } from "lucide-react"
 import { Button } from "@/components/shadcn-ui/button"
 import FinanceCard from "./FinanceCard"
-import { FinanceProps } from "@/lib/types"
+import { FinanceProps } from "@/library/types"
 
 export default function Finance({ finances }: { finances: FinanceProps }) {
   return (

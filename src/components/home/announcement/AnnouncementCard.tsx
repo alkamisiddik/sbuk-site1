@@ -3,7 +3,7 @@ import { motion } from "framer-motion"
 import Image from "next/image"
 import { Button } from "../../shadcn-ui/button"
 import { ArrowRight, ArrowUpRight } from "lucide-react"
-import { Announcement } from "@/lib/types"
+import { Announcement } from "@/library/types"
 
 function AnnouncementCard({ title, announcement }: { title: string; announcement: Announcement }) {
     const [isActive, setIsActive] = useState(false)

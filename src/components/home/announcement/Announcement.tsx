@@ -3,7 +3,7 @@
 import { useEffect, useState } from "react"
 import { ArrowLeft, ArrowRight } from "lucide-react"
 import AnnouncementCard from "./AnnouncementCard"
-import { AnnouncementData } from "@/lib/types"
+import { AnnouncementData } from "@/library/types"
 
 export default function Announcements({ announcementData }: { announcementData: AnnouncementData }) {
   const [direction, setDirection] = useState<"next" | "prev" | null>(null)

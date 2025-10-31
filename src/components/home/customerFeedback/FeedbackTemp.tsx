@@ -3,7 +3,7 @@
 import { useEffect, useState } from "react"
 import { motion, AnimatePresence } from "framer-motion"
 import Image from "next/image"
-import { FeedbackProps } from "@/lib/types"
+import { FeedbackProps } from "@/library/types"
 
 export default function Feedback({ feedbacks }: { feedbacks: FeedbackProps[] }) {
     const [page, setPage] = useState(0)

@@ -5,7 +5,7 @@ import { motion } from "framer-motion"
 import Image from "next/image"
 import { Button } from "../../shadcn-ui/button"
 import { ArrowRight, ArrowUpRight, X } from "lucide-react"
-import { FinanceCardPros } from "@/lib/types"
+import { FinanceCardPros } from "@/library/types"
 
 function FinanceCard({ financeCard }: { financeCard: FinanceCardPros }) {
     const [isActive, setIsActive] = useState(false)

@@ -1,4 +1,5 @@
-import { AboutUsProps } from "@/lib/types";
+
+import { AboutUsProps } from "@/library/types";
 import { ArrowRight, ArrowUpRight } from "lucide-react"
 import Image from "next/image"
 

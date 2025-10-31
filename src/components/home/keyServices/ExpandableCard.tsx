@@ -6,7 +6,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "../../shadcn-ui/card"
 import { Button } from "../../shadcn-ui/button"
 import { useEffect, useState } from "react"
 import Image from "next/image"
-import { ExpandableCardProps } from "@/lib/types"
+import { ExpandableCardProps } from "@/library/types"
 
 export default function ExpandableCard({
   id,

@@ -10,7 +10,7 @@ import {
     NavigationMenuContent,
 } from "@/components/shadcn-ui/navigation-menu"
 import Image from "next/image";
-import { HeaderProps } from "@/components/shared/library/types";
+import { HeaderProps } from "@/library/types";
 
 export function SbukHeader({ headerData }: HeaderProps) {
     const [mobileMenuOpen, setMobileMenuOpen] = React.useState(false)

@@ -1,7 +1,7 @@
 import { ArrowUpRight } from "lucide-react"
 import Link from "next/link"
 import { AnimatedQuote } from "./Quote"
-import { ServiceListProps } from "@/lib/types"
+import { ServiceListProps } from "@/library/types"
 
 export default function ServiceList({ serviceList }: ServiceListProps) {
   return (

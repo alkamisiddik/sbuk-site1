@@ -1,7 +1,7 @@
 "use client"
 import { ArrowUpRight } from "lucide-react"
 import { motion } from "framer-motion"
-import { ContactProps } from "@/lib/types"
+import { ContactProps } from "@/library/types"
 
 export default function ContactPage({ contactData }: { contactData: ContactProps }) {
 

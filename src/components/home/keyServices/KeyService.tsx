@@ -1,7 +1,7 @@
 "use client"
 import { useState } from "react"
 import ExpandableCard from "./ExpandableCard"
-import { KeyServicesProps } from "@/lib/types"
+import { KeyServicesProps } from "@/library/types"
 
 export default function KeyServices({ keyServices }: KeyServicesProps) {
   const [active, setActive] = useState<number | null>(null)

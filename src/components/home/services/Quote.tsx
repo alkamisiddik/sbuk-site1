@@ -3,7 +3,7 @@
 import { useState, useEffect, useRef } from "react"
 import Image from "next/image"
 import { useInView } from "framer-motion"
-import { Quote } from "@/lib/types"
+import { Quote } from "@/library/types"
 
 export function AnimatedQuote({ quote }: { quote: Quote }) {
   const [isHovered, setIsHovered] = useState(false)
