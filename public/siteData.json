@@ -244,7 +244,7 @@
       {
         "id": 1,
         "title": "Trade & Project Financing",
-        "image": "/images/keyService/keyService1.jpg",
+        "image": "/images/keyservice/keyService1.jpg",
         "details": "We specialize in assisting businesses in obtaining the necessary capital to successfully undertake large-scale trade and infrastructure projects. Our goal is to ensure that these ventures are executed with maximum efficiency and effectiveness, enabling companies to thrive in a competitive market. By leveraging our expertise and resources, we help organizations navigate the complexities of financing, allowing them to focus on their core operations and achieve their strategic objectives.",
         "buttonText": "See More",
         "boxDetails": [
@@ -289,7 +289,7 @@
       {
         "id": 2,
         "title": "Export Development",
-        "image": "/images/keyService/keyService2.jpg",
+        "image": "/images/keyservice/keyService2.jpg",
         "details": "We empower businesses to expand into international markets with comprehensive export development solutions. From market research to financial support, we provide the tools, strategies, and guidance needed to make your exports successful and sustainable.",
         "buttonText": "See More",
         "boxDetails": [
@@ -334,7 +334,7 @@
       {
         "id": 3,
         "title": "Guarantees",
-        "image": "/images/keyService/keyService3.jpg",
+        "image": "/images/keyservice/keyService3.jpg",
         "details": "We provide a wide range of guarantee solutions designed to build trust, reduce financial risk, and ensure the smooth execution of trade and project commitments. Our guarantees serve as strong financial backing, giving businesses and their partners the confidence to move forward with security and assurance.",
         "buttonText": "See More",
         "boxDetails": [
@@ -383,7 +383,7 @@
       {
         "id": 4,
         "title": "Trade Information & Advisory",
-        "image": "/images/keyService/keyService4.jpg",
+        "image": "/images/keyservice/keyService4.jpg",
         "details": "We provide businesses with expert advisory and up-to-date trade information to help them navigate complex markets, comply with regulations, and make informed decisions. Our advisory services are designed to reduce risks, identify opportunities, and support sustainable trade growth.",
         "buttonText": "See More",
         "boxDetails": [
