@@ -217,17 +217,17 @@
   "carousel": [
     {
       "id": 1,
-      "src": "/images/home1.png",
+      "src": "/images/home/home1.png",
       "alt": "Home 1"
     },
     {
       "id": 2,
-      "src": "/images/home2.png",
+      "src": "/images/home/home2.png",
       "alt": "Home 2"
     },
     {
       "id": 3,
-      "src": "/images/home3.png",
+      "src": "/images/home/home3.png",
       "alt": "Home 3"
     }
   ],
@@ -244,7 +244,7 @@
       {
         "id": 1,
         "title": "Trade & Project Financing",
-        "image": "/images/keyService1.jpg",
+        "image": "/images/keyService/keyService1.jpg",
         "details": "We specialize in assisting businesses in obtaining the necessary capital to successfully undertake large-scale trade and infrastructure projects. Our goal is to ensure that these ventures are executed with maximum efficiency and effectiveness, enabling companies to thrive in a competitive market. By leveraging our expertise and resources, we help organizations navigate the complexities of financing, allowing them to focus on their core operations and achieve their strategic objectives.",
         "buttonText": "See More",
         "boxDetails": [
@@ -289,7 +289,7 @@
       {
         "id": 2,
         "title": "Export Development",
-        "image": "/images/keyService2.jpg",
+        "image": "/images/keyService/keyService2.jpg",
         "details": "We empower businesses to expand into international markets with comprehensive export development solutions. From market research to financial support, we provide the tools, strategies, and guidance needed to make your exports successful and sustainable.",
         "buttonText": "See More",
         "boxDetails": [
@@ -334,7 +334,7 @@
       {
         "id": 3,
         "title": "Guarantees",
-        "image": "/images/keyService3.jpg",
+        "image": "/images/keyService/keyService3.jpg",
         "details": "We provide a wide range of guarantee solutions designed to build trust, reduce financial risk, and ensure the smooth execution of trade and project commitments. Our guarantees serve as strong financial backing, giving businesses and their partners the confidence to move forward with security and assurance.",
         "buttonText": "See More",
         "boxDetails": [
@@ -383,7 +383,7 @@
       {
         "id": 4,
         "title": "Trade Information & Advisory",
-        "image": "/images/keyService4.jpg",
+        "image": "/images/keyService/keyService4.jpg",
         "details": "We provide businesses with expert advisory and up-to-date trade information to help them navigate complex markets, comply with regulations, and make informed decisions. Our advisory services are designed to reduce risks, identify opportunities, and support sustainable trade growth.",
         "buttonText": "See More",
         "boxDetails": [
@@ -439,19 +439,19 @@
     "buttonText": "More About Us",
     "aboutUsImages": [
       {
-        "src": "/images/about1.png",
+        "src": "/images/about/about1.png",
         "alt": "About Us"
       },
       {
-        "src": "/images/about2.png",
+        "src": "/images/about/about2.png",
         "alt": "About Us"
       },
       {
-        "src": "/images/about3.png",
+        "src": "/images/about/about3.png",
         "alt": "About Us"
       },
       {
-        "src": "/images/about4.png",
+        "src": "/images/about/about4.png",
         "alt": "About Us"
       }
     ]
@@ -562,21 +562,21 @@
         "title": "Individuals",
         "subtitle": "The most transparent and secured bank of The most transparent and secured bank The most transparent and secured bank The most transparent and secured bank",
         "hoverPara": "Welcome to Pinnacle Bank, where your financial security is our top priority! We leverage the latest technology to ensure your transactions are safe and secure. Our dedication to transparency and open communication fosters trust, making us the ideal partner for all your banking needs. Join us and discover a banking experience that puts you first, with a strong focus on your financial well-being. Here keeping your money safe is our top priority! We use the latest tech to make sure your transactions are secure. We believe in being open and honest, which helps us build trust with you. Come join us for a banking experience that puts you first and focuses on your financial well-being!",
-        "image": "/images/finance1.jpg",
+        "image": "/images/finance/finance1.jpg",
         "buttonText": "See More"
       },
       {
         "title": "Startups",
         "subtitle": "The most transparent and secured bank The most transparent and secured bank The most transparent and secured bank The most transparent and secured bank",
         "hoverPara": "Welcome to Pinnacle Bank, where your financial security is our top priority! We leverage the latest technology to ensure your transactions are safe and secure. Our dedication to transparency and open communication fosters trust, making us the ideal partner for all your banking needs. Join us and discover a banking experience that puts you first, with a strong focus on your financial well-being. Here keeping your money safe is our top priority! We use the latest tech to make sure your transactions are secure. We believe in being open and honest, which helps us build trust with you. Come join us for a banking experience that puts you first and focuses on your financial well-being!",
-        "image": "/images/finance2.jpg",
+        "image": "/images/finance/finance2.jpg",
         "buttonText": "See More"
       },
       {
         "title": "Enterprises",
         "subtitle": "The most transparent and secured bank The most transparent and secured bank The most transparent and secured bank The most transparent and secured bank",
         "hoverPara": "Welcome to Pinnacle Bank, where your financial security is our top priority! We leverage the latest technology to ensure your transactions are safe and secure. Our dedication to transparency and open communication fosters trust, making us the ideal partner for all your banking needs. Join us and discover a banking experience that puts you first, with a strong focus on your financial well-being. Here keeping your money safe is our top priority! We use the latest tech to make sure your transactions are secure. We believe in being open and honest, which helps us build trust with you. Come join us for a banking experience that puts you first and focuses on your financial well-being!",
-        "image": "/images/finance3.jpg",
+        "image": "/images/finance/finance3.jpg",
         "buttonText": "See More"
       }
     ]
@@ -584,37 +584,37 @@
   "feedbacks": [
     {
       "feedback": "I signed up in minutes, and now I can manage everything from my phone. No hidden fees, no stress—just pure convenience!",
-      "image": "/images/customer1.png",
+      "image": "/images/customer/customer1.png",
       "name": "Aulia Morgan.",
       "title": "Officer"
     },
     {
       "feedback": "As someone new to digital banking, I love how simple and transparent the services are. Plus, the rewards are a great bonus!",
-      "image": "/images/customer2.png",
+      "image": "/images/customer/customer2.png",
       "name": "Daniel K",
       "title": "Small Business Owner"
     },
     {
       "feedback": "From quick money transfers to round-the-clock support, this bank has everything I need. I feel safe and in control.",
-      "image": "/images/customer3.png",
+      "image": "/images/customer/customer3.png",
       "name": "Carlos H",
       "title": "Travel Blogger"
     },
     {
       "feedback": "I signed up in minutes, and now I can manage everything from my phone. No hidden fees, no stress—just pure convenience!",
-      "image": "/images/customer4.png",
+      "image": "/images/customer/customer4.png",
       "name": "Theresa Webb",
       "title": "Officer"
     },
     {
       "feedback": "As someone new to digital banking, I love how simple and transparent the services are. Plus, the rewards are a great bonus!",
-      "image": "/images/customer5.png",
+      "image": "/images/customer/customer5.png",
       "name": "Kristin Watson",
       "title": "Travel Blogger"
     },
     {
       "feedback": "From quick money transfers to round-the-clock support, this bank has everything I need. I feel safe and in control.",
-      "image": "/images/customer6.png",
+      "image": "/images/customer/customer6.png",
       "name": "Darrell Steward",
       "title": "Small Business Owner"
     }
@@ -624,7 +624,7 @@
     "announcements": [
       {
         "id": 1,
-        "image": "/images/announcement1.jpg",
+        "image": "/images/announcement/announcement1.jpg",
         "title": "Lorem Ipsum is simply dummy text",
         "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
         "hoverPara": [
@@ -635,7 +635,7 @@
       },
       {
         "id": 2,
-        "image": "/images/announcement2.png",
+        "image": "/images/announcement/announcement2.png",
         "title": "Lorem Ipsum is simply dummy text",
         "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
         "hoverPara": [
@@ -645,7 +645,7 @@
       },
       {
         "id": 3,
-        "image": "/images/announcement3.png",
+        "image": "/images/announcement/announcement3.png",
         "title": "Lorem Ipsum is simply dummy text",
         "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
         "hoverPara": [
@@ -655,7 +655,7 @@
       },
       {
         "id": 4,
-        "image": "/images/announcement1.jpg",
+        "image": "/images/announcement/announcement1.jpg",
         "title": "Id 4 - Lorem Ipsum is simply dummy",
         "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
         "hoverPara": [
@@ -665,7 +665,7 @@
       },
       {
         "id": 5,
-        "image": "/images/announcement2.png",
+        "image": "/images/announcement/announcement2.png",
         "title": "Id 5 - Lorem Ipsum is simply dummy",
         "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
         "hoverPara": [
@@ -675,7 +675,7 @@
       },
       {
         "id": 6,
-        "image": "/images/announcement3.png",
+        "image": "/images/announcement/announcement3.png",
         "title": "Id 6 - Lorem Ipsum is simply dummy",
         "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
         "hoverPara": [

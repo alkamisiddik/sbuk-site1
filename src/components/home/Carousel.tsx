@@ -70,7 +70,7 @@ export default function Carousel({ slides }: CarouselProps) {
 
 
             {/* Navigation dots (right middle) */}
-            <div className="absolute bottom-[35.39px] left-1/2 -translate-x-1/2 flex flex-row gap-2 z-5">
+            <div className="absolute top-1/2 right-[35px] -translate-y-1/2 flex flex-col gap-2 z-5">
                 {slides.map((_, index: number) => (
                     <button
                         key={index}
