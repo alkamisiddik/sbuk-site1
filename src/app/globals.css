@@ -78,6 +78,7 @@
   --sidebar-border: oklch(0.922 0 0);
   --sidebar-ring: oklch(0.708 0 0);
 
+  --font-helvetica-neue: "Helvetica Neue", "Segoe UI", Roboto, "Helvetica", Arial, sans-serif;
   --global-px: 16px;
   --header-Height: 60px;
 }
@@ -116,8 +117,8 @@
 /* 2XL screens (1536px and up) */
 @media (min-width: 1536px) {
   :root {
-    --global-px: 120px;
-    --header-Height: 90px;
+    --global-px: 200px;
+    --header-Height: 96.39px;
   }
 }
 
@@ -154,7 +155,6 @@
   --sidebar-border: oklch(1 0 0 / 10%);
   --sidebar-ring: oklch(0.556 0 0);
 }
-
 
 @layer base {
   * {

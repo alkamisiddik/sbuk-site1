@@ -4,211 +4,58 @@
   "header": {
     "site": {
       "siteTitle": "Sonali Bangladesh (UK) Limited",
-      "siteLogo": "/images/logo_footer.png",
+      "siteLogo": "/images/logo.webp",
       "logoAlt": "Sonali Bangladesh (UK) Limited"
     },
     "menuItems": [
       {
-        "title": "Products & Services details",
+        "title": "Who We Are",
         "contents": [
           {
-            "contentTitle": "Who We Serve",
-            "contentItems": [
-              {
-                "name": "Large Corporates",
-                "href": ""
-              },
-              {
-                "name": "Governments",
-                "href": ""
-              },
-              {
-                "name": "Financial Institutions",
-                "href": ""
-              },
-              {
-                "name": "Other Clients",
-                "href": ""
-              }
-            ]
+            "name": "Our Strategy and Values",
+            "href": "/about"
           },
           {
-            "contentTitle": "Key Services",
-            "contentItems": [
-              {
-                "name": "Trade & Project Financing",
-                "href": ""
-              },
-              {
-                "name": "Export Development",
-                "href": ""
-              },
-              {
-                "name": "Guarantees",
-                "href": ""
-              },
-              {
-                "name": "Trade Information & Advisory",
-                "href": ""
-              }
-            ]
+            "name": "Our Leadership Team",
+            "href": ""
           },
           {
-            "contentTitle": "Additional Services",
-            "contentItems": [
-              {
-                "name": "Supply Chain Financing Programs",
-                "href": ""
-              },
-              {
-                "name": "SME Financing Program",
-                "href": ""
-              },
-              {
-                "name": "Guarantees",
-                "href": ""
-              },
-              {
-                "name": "Credit Insurance Offerings",
-                "href": ""
-              }
-            ]
+            "name": "Our Heritage",
+            "href": ""
+          },
+          {
+            "name": "ESG and Responsible Business",
+            "href": ""
           }
         ]
       },
       {
-        "title": "Knowledge & Research",
+        "title": "Our Businesses",
         "contents": [
           {
-            "contentTitle": "Knowledge & Research",
-            "contentItems": [
-              {
-                "name": "Research & Statistics",
-                "href": ""
-              },
-              {
-                "name": "Trade Policy and Market Access",
-                "href": ""
-              },
-              {
-                "name": "Trade Intelligence Solutions",
-                "href": ""
-              },
-              {
-                "name": "Publications (Journals, Papers, Newsletters)",
-                "href": ""
-              }
-            ]
+            "name": "Product and Services",
+            "href": ""
+          },
+          {
+            "name": "Markets",
+            "href": ""
           }
         ]
       },
       {
-        "title": "Company",
+        "title": "Career",
         "contents": [
           {
-            "contentTitle": "About Us",
-            "contentItems": [
-              {
-                "name": "Vission & Mission",
-                "href": ""
-              },
-              {
-                "name": "Our Strategy",
-                "href": ""
-              },
-              {
-                "name": "Organizational Structure",
-                "href": ""
-              },
-              {
-                "name": "Board of Directors",
-                "href": ""
-              },
-              {
-                "name": "Management Team",
-                "href": ""
-              },
-              {
-                "name": "Corporate Governance",
-                "href": ""
-              },
-              {
-                "name": "Contact Us",
-                "href": ""
-              }
-            ]
+            "name": "Why SBUK ?",
+            "href": ""
           },
           {
-            "contentTitle": "Career",
-            "contentItems": [
-              {
-                "name": "Job Vacancies",
-                "href": ""
-              },
-              {
-                "name": "Internship Opportunities",
-                "href": ""
-              },
-              {
-                "name": "Employee Value Proposition",
-                "href": ""
-              },
-              {
-                "name": "Board Of Directors",
-                "href": ""
-              },
-              {
-                "name": "Management Team",
-                "href": ""
-              },
-              {
-                "name": "Corporate Governance",
-                "href": ""
-              }
-            ]
+            "name": "Work with us",
+            "href": ""
           },
           {
-            "contentTitle": "News",
-            "contentItems": [
-              {
-                "name": "Events (Upcoming and Past)",
-                "href": ""
-              },
-              {
-                "name": "Press Releases",
-                "href": ""
-              },
-              {
-                "name": "Insights",
-                "href": ""
-              },
-              {
-                "name": "Management Team",
-                "href": ""
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "title": "Investors",
-        "contents": [
-          {
-            "contentTitle": "Investors",
-            "contentItems": [
-              {
-                "name": "Financial Information",
-                "href": ""
-              },
-              {
-                "name": "Credit Ratings Reports",
-                "href": ""
-              },
-              {
-                "name": "FAQs",
-                "href": ""
-              }
-            ]
+            "name": "Careers FAQ's",
+            "href": ""
           }
         ]
       }
@@ -456,6 +303,7 @@
       }
     ]
   },
+  "ourBusiness": {},
   "serviceList": {
     "services": [
       {

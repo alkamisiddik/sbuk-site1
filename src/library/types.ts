@@ -4,14 +4,9 @@ interface MenuLink {
     href: string
 }
 
-interface MenuContent {
-    contentTitle: string
-    contentItems: MenuLink[]
-}
-
 interface MenuItem {
     title: string
-    contents: MenuContent[]
+    contents: MenuLink[]
 }
 
 interface HeaderData {

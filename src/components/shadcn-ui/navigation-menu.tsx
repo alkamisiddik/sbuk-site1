@@ -58,7 +58,7 @@ function NavigationMenuItem({
 }
 
 const navigationMenuTriggerStyle = cva(
-  "group inline-flex h-[26px] w-max items-center justify-center py-[17px] bg-transparent text-white hover:bg-transparent disabled:pointer-events-none disabled:opacity-50 data-[state=open]:bg-transparent focus:bg-transparent outline-none transition-colors duration-200"
+  "group inline-flex h-[26px] w-max items-center justify-center py-[17px] bg-transparent hover:bg-transparent disabled:pointer-events-none disabled:opacity-50 data-[state=open]:bg-transparent focus:bg-transparent outline-none transition-colors duration-200"
 )
 
 function NavigationMenuTrigger({
@@ -73,12 +73,6 @@ function NavigationMenuTrigger({
       {...props}
     >
       {children}{" "}
-      {/* Show indicator on hover OR when menu is open */}
-      <span className="absolute w-full h-1 rounded-b-4xl bg-highlight-500 -bottom-8 left-0 scale-y-0 origin-top transition-transform duration-300 hover:scale-y-100 group-data-[state=open]:scale-y-100 z-100"></span>
-      <ChevronDownIcon
-        className="relative ml-2 size-3 text-white transition duration-300 group-data-[state=open]:rotate-180"
-        aria-hidden="true"
-      />
     </NavigationMenuPrimitive.Trigger>
   )
 }
@@ -94,7 +88,7 @@ function NavigationMenuContent({
       // ✅ Use fixed positioning instead of relative-to-trigger
       className={cn(
         // Base positioning
-        "fixed left-1/2 -translate-x-1/2 translate-y-[20px] w-[calc(100vw-2*var(--global-px))]",
+        "fixed left-1/2 -translate-x-1/2 translate-y-[20px] w-[490px] md:w-auto max-w-[90vw] lg:max-w-[calc(100vw-40px)] z-50",
 
         // Add smooth transitions
         "animate-in duration-300 ease-out",
